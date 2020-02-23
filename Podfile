@@ -7,6 +7,10 @@ def stocket_pods
   pod 'AppCenter'
   pod 'Firebase/Analytics'
   pod 'OneSignal', '>= 2.11.2', '< 3.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'FirebaseFirestoreSwift'
 end
 
 target 'Production' do
