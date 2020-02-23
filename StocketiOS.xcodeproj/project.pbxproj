@@ -18,6 +18,11 @@
 		BA5B382B24021BB4006EE5C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382A24021BB4006EE5C7 /* LoginView.swift */; };
 		BA5B382E24021C38006EE5C7 /* StocketColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382C24021C24006EE5C7 /* StocketColors.swift */; };
 		BA5B382F24021E15006EE5C7 /* StocketColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382C24021C24006EE5C7 /* StocketColors.swift */; };
+		BA5B3832240227C1006EE5C7 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B3831240227C1006EE5C7 /* AuthState.swift */; };
+		BA5B383324022A2E006EE5C7 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B3831240227C1006EE5C7 /* AuthState.swift */; };
+		BA5B383524022ACC006EE5C7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B383424022ACC006EE5C7 /* MainView.swift */; };
+		BA5B383624022AFF006EE5C7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B383424022ACC006EE5C7 /* MainView.swift */; };
+		BA5B383724022B07006EE5C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382A24021BB4006EE5C7 /* LoginView.swift */; };
 		BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A152401E3E20064D322 /* AppDelegate.swift */; };
 		BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A172401E3E20064D322 /* SceneDelegate.swift */; };
 		BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A192401E3E20064D322 /* ContentView.swift */; };
@@ -77,6 +82,8 @@
 		BA5B382224021931006EE5C7 /* AppleSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInController.swift; sourceTree = "<group>"; };
 		BA5B382A24021BB4006EE5C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BA5B382C24021C24006EE5C7 /* StocketColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocketColors.swift; sourceTree = "<group>"; };
+		BA5B3831240227C1006EE5C7 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		BA5B383424022ACC006EE5C7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BAD00A122401E3E20064D322 /* Stocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD00A152401E3E20064D322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD00A172401E3E20064D322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +176,15 @@
 			path = LoginView;
 			sourceTree = "<group>";
 		};
+		BA5B3830240227A0006EE5C7 /* UtilClasses */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B382C24021C24006EE5C7 /* StocketColors.swift */,
+				BA5B3831240227C1006EE5C7 /* AuthState.swift */,
+			);
+			path = UtilClasses;
+			sourceTree = "<group>";
+		};
 		BAD00A092401E3E20064D322 = {
 			isa = PBXGroup;
 			children = (
@@ -193,13 +209,14 @@
 		BAD00A142401E3E20064D322 /* StocketiOS */ = {
 			isa = PBXGroup;
 			children = (
+				BA5B3830240227A0006EE5C7 /* UtilClasses */,
 				BA5B382924021BA3006EE5C7 /* LoginView */,
 				BA5B381F240218E4006EE5C7 /* AppleSignIn */,
 				BAD00A292401EAF50064D322 /* Firebase */,
-				BA5B382C24021C24006EE5C7 /* StocketColors.swift */,
 				BAD00A152401E3E20064D322 /* AppDelegate.swift */,
 				BAD00A172401E3E20064D322 /* SceneDelegate.swift */,
 				BAD00A192401E3E20064D322 /* ContentView.swift */,
+				BA5B383424022ACC006EE5C7 /* MainView.swift */,
 				BAD00A1B2401E3E30064D322 /* Assets.xcassets */,
 				BAD00A202401E3E40064D322 /* LaunchScreen.storyboard */,
 				BAD00A232401E3E40064D322 /* Info.plist */,
@@ -492,7 +509,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5B382724021931006EE5C7 /* AppleSignInController.swift in Sources */,
+				BA5B3832240227C1006EE5C7 /* AuthState.swift in Sources */,
 				BA5B382B24021BB4006EE5C7 /* LoginView.swift in Sources */,
+				BA5B383524022ACC006EE5C7 /* MainView.swift in Sources */,
 				BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */,
 				BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */,
@@ -507,11 +526,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5B382824021931006EE5C7 /* AppleSignInController.swift in Sources */,
+				BA5B383624022AFF006EE5C7 /* MainView.swift in Sources */,
 				BAD00A672401EE020064D322 /* AppDelegate.swift in Sources */,
 				BA5B382424021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BA5B382E24021C38006EE5C7 /* StocketColors.swift in Sources */,
 				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
+				BA5B383324022A2E006EE5C7 /* AuthState.swift in Sources */,
 				BAD00A692401EE020064D322 /* ContentView.swift in Sources */,
+				BA5B383724022B07006EE5C7 /* LoginView.swift in Sources */,
 				BA5B382624021931006EE5C7 /* AppleSignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

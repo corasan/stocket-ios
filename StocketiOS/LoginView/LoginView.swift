@@ -21,6 +21,7 @@ struct LoginView: View {
                 Spacer()
                 
                 AppleSignIn()
+                    .frame(width: 220, height: 50)
                 Spacer()
             }
             Spacer()
