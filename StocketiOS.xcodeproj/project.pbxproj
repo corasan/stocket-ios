@@ -496,8 +496,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = StocketiOS/Stocket.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"StocketiOS/Preview Content\"";
 				DEVELOPMENT_TEAM = M52W2L8ZQV;
 				ENABLE_PREVIEWS = YES;
@@ -508,6 +508,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.StocketiOS;
 				PRODUCT_NAME = Stocket;
+				PROVISIONING_PROFILE_SPECIFIER = "Stocket iOS Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -519,8 +520,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = StocketiOS/Stocket.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"StocketiOS/Preview Content\"";
 				DEVELOPMENT_TEAM = M52W2L8ZQV;
 				ENABLE_PREVIEWS = YES;
@@ -531,6 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.StocketiOS;
 				PRODUCT_NAME = Stocket;
+				PROVISIONING_PROFILE_SPECIFIER = "Stocket iOS Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
