@@ -11,6 +11,8 @@
 		</dict>
 		<key>OneSignalNotificationServiceExtension.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
@@ -33,6 +35,11 @@
 			<true/>
 		</dict>
 		<key>BAD00A642401EE020064D322</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAFC94342401FFDF00B5ACB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
