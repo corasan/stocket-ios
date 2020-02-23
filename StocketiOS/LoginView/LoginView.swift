@@ -10,7 +10,22 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            Image("StocketLogo")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 150.0)
+            Spacer()
+            HStack {
+                Spacer()
+                
+                AppleSignIn()
+                Spacer()
+            }
+            Spacer()
+        }
+        .background(StocketColors.black.edgesIgnoringSafeArea(.all))
     }
 }
 
