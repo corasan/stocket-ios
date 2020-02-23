@@ -78,6 +78,7 @@
 		BAFC94352401FFDF00B5ACB7 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFC94372401FFDF00B5ACB7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		BAFC94392401FFDF00B5ACB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFC94412402109E00B5ACB7 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
 		BF65072E7C3EC2874CF975B3 /* Pods-Production.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Production.debug.xcconfig"; path = "Target Support Files/Pods-Production/Pods-Production.debug.xcconfig"; sourceTree = "<group>"; };
 		CE85DEB86F1FEE1B58EE2DC7 /* Pods_Development.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Development.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -209,6 +210,7 @@
 		BAFC94362401FFDF00B5ACB7 /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
+				BAFC94412402109E00B5ACB7 /* OneSignalNotificationServiceExtension.entitlements */,
 				BAFC94372401FFDF00B5ACB7 /* NotificationService.swift */,
 				BAFC94392401FFDF00B5ACB7 /* Info.plist */,
 			);
@@ -716,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 304FFD6290CA7CC20B77AF98 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M52W2L8ZQV;
@@ -738,6 +741,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94FB3E6D364E2BF07C512A72 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M52W2L8ZQV;
