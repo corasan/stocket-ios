@@ -7,10 +7,28 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct ContentView: View {
+    @State var isAuth: Bool = false
+    @State var authStatehandle: AuthStateDidChangeListenerHandle?
+    
     var body: some View {
-        Text("Hello, World!")
+        Group {
+            Text("Hello, World!")
+        }
+        .onAppear {
+            self.authStatehandle = Auth.auth().addStateDidChangeListener { (auth, user) in
+                if user != nil {
+                    self.isAuth = true
+                } else {
+                    self.isAuth = false
+                }
+            }
+        }
+        .onDisappear {
+            Auth.auth().removeStateDidChangeListener(self.authStatehandle!)
+        }
     }
 }
 
