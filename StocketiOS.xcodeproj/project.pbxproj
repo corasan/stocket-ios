@@ -15,6 +15,8 @@
 		BA5B382624021931006EE5C7 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382124021931006EE5C7 /* AppleSignIn.swift */; };
 		BA5B382724021931006EE5C7 /* AppleSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382224021931006EE5C7 /* AppleSignInController.swift */; };
 		BA5B382824021931006EE5C7 /* AppleSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382224021931006EE5C7 /* AppleSignInController.swift */; };
+		BA5B382B24021BB4006EE5C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382A24021BB4006EE5C7 /* LoginView.swift */; };
+		BA5B382E24021C38006EE5C7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382C24021C24006EE5C7 /* Colors.swift */; };
 		BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A152401E3E20064D322 /* AppDelegate.swift */; };
 		BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A172401E3E20064D322 /* SceneDelegate.swift */; };
 		BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A192401E3E20064D322 /* ContentView.swift */; };
@@ -72,6 +74,8 @@
 		BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInCoordinator.swift; sourceTree = "<group>"; };
 		BA5B382124021931006EE5C7 /* AppleSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
 		BA5B382224021931006EE5C7 /* AppleSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInController.swift; sourceTree = "<group>"; };
+		BA5B382A24021BB4006EE5C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BA5B382C24021C24006EE5C7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		BAD00A122401E3E20064D322 /* Stocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD00A152401E3E20064D322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD00A172401E3E20064D322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +160,14 @@
 			path = AppleSignIn;
 			sourceTree = "<group>";
 		};
+		BA5B382924021BA3006EE5C7 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B382A24021BB4006EE5C7 /* LoginView.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
 		BAD00A092401E3E20064D322 = {
 			isa = PBXGroup;
 			children = (
@@ -180,15 +192,17 @@
 		BAD00A142401E3E20064D322 /* StocketiOS */ = {
 			isa = PBXGroup;
 			children = (
+				BA5B382924021BA3006EE5C7 /* LoginView */,
 				BA5B381F240218E4006EE5C7 /* AppleSignIn */,
-				BAD00A512401EC1C0064D322 /* Stocket.entitlements */,
 				BAD00A292401EAF50064D322 /* Firebase */,
+				BA5B382C24021C24006EE5C7 /* Colors.swift */,
 				BAD00A152401E3E20064D322 /* AppDelegate.swift */,
 				BAD00A172401E3E20064D322 /* SceneDelegate.swift */,
 				BAD00A192401E3E20064D322 /* ContentView.swift */,
 				BAD00A1B2401E3E30064D322 /* Assets.xcassets */,
 				BAD00A202401E3E40064D322 /* LaunchScreen.storyboard */,
 				BAD00A232401E3E40064D322 /* Info.plist */,
+				BAD00A512401EC1C0064D322 /* Stocket.entitlements */,
 				BAD00A1D2401E3E30064D322 /* Preview Content */,
 			);
 			path = StocketiOS;
@@ -477,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5B382724021931006EE5C7 /* AppleSignInController.swift in Sources */,
+				BA5B382B24021BB4006EE5C7 /* LoginView.swift in Sources */,
 				BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */,
 				BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */,
@@ -492,6 +507,7 @@
 				BA5B382824021931006EE5C7 /* AppleSignInController.swift in Sources */,
 				BAD00A672401EE020064D322 /* AppDelegate.swift in Sources */,
 				BA5B382424021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
+				BA5B382E24021C38006EE5C7 /* Colors.swift in Sources */,
 				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
 				BAD00A692401EE020064D322 /* ContentView.swift in Sources */,
 				BA5B382624021931006EE5C7 /* AppleSignIn.swift in Sources */,
