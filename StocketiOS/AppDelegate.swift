@@ -11,14 +11,23 @@ import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
 import Firebase
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+
+        OneSignal.initWithLaunchOptions(launchOptions,
+        appId: "d641c814-7c7c-4548-a89f-4a29796762b3",
+        handleNotificationAction: nil,
+        settings: onesignalInitSettings)
+
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+        })
+        
         FirebaseApp.configure()
         MSAppCenter.start("5aecb023-9374-40a7-a7b3-fff54bfe9c4b", withServices:[
           MSAnalytics.self,
@@ -41,7 +50,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 

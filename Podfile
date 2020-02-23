@@ -1,31 +1,22 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '13.0'
+platform :ios, '13.0'
+use_frameworks!
 
 def stocket_pods
+  # Pods for StocketiOS
   pod 'AppCenter'
   pod 'Firebase/Analytics'
+  pod 'OneSignal', '>= 2.11.2', '< 3.0'
 end
 
 target 'Production' do
-  use_frameworks!
-
-  # Pods for StocketiOS
   stocket_pods
-
-end
-
-target 'Staging' do
-  use_frameworks!
-
-  # Pods for StocketiOS
-  stocket_pods
-
 end
 
 target 'Development' do
-  use_frameworks!
-
-  # Pods for StocketiOS
   stocket_pods
+end
 
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignal', '>= 2.11.2', '< 3.0'
 end
