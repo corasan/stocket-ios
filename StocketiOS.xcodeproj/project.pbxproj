@@ -3,20 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CD472E08DB079126FBD993A /* Pods_Development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE85DEB86F1FEE1B58EE2DC7 /* Pods_Development.framework */; };
+		A1736E0E6D46245D9F51B69B /* Pods_Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B981FC450D6090E967B19FE /* Pods_Production.framework */; };
 		BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A152401E3E20064D322 /* AppDelegate.swift */; };
 		BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A172401E3E20064D322 /* SceneDelegate.swift */; };
 		BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A192401E3E20064D322 /* ContentView.swift */; };
 		BAD00A1C2401E3E30064D322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A1B2401E3E30064D322 /* Assets.xcassets */; };
 		BAD00A1F2401E3E30064D322 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A1E2401E3E30064D322 /* Preview Assets.xcassets */; };
 		BAD00A222401E3E40064D322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A202401E3E40064D322 /* LaunchScreen.storyboard */; };
+		BAD00A672401EE020064D322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A152401E3E20064D322 /* AppDelegate.swift */; };
+		BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A172401E3E20064D322 /* SceneDelegate.swift */; };
+		BAD00A692401EE020064D322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A192401E3E20064D322 /* ContentView.swift */; };
+		BAD00A6D2401EE020064D322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A202401E3E40064D322 /* LaunchScreen.storyboard */; };
+		BAD00A6F2401EE020064D322 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A1E2401E3E30064D322 /* Preview Assets.xcassets */; };
+		BAD00A702401EE020064D322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A1B2401E3E30064D322 /* Assets.xcassets */; };
+		BAFC942D2401F5B400B5ACB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A2B2401EB1B0064D322 /* GoogleService-Info.plist */; };
+		BAFC94302401F63C00B5ACB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAFC942F2401F63C00B5ACB7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BAD00A122401E3E20064D322 /* StocketiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocketiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09822502B8AC3692F8D4ED80 /* Pods-Development.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Development.release.xcconfig"; path = "Target Support Files/Pods-Development/Pods-Development.release.xcconfig"; sourceTree = "<group>"; };
+		0B981FC450D6090E967B19FE /* Pods_Production.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Production.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F7F420B92124F9247A7C31 /* Pods-Development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Development.debug.xcconfig"; path = "Target Support Files/Pods-Development/Pods-Development.debug.xcconfig"; sourceTree = "<group>"; };
+		1D52276C89E3BD28590635CD /* Pods-Staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Staging.release.xcconfig"; path = "Target Support Files/Pods-Staging/Pods-Staging.release.xcconfig"; sourceTree = "<group>"; };
+		3EE3B9B03F772B05572DB064 /* Pods_Staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		400D59D787249A96E88C12F4 /* Pods-Staging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Staging.debug.xcconfig"; path = "Target Support Files/Pods-Staging/Pods-Staging.debug.xcconfig"; sourceTree = "<group>"; };
+		52E72783F633A4D1F982D062 /* Pods-Production.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Production.release.xcconfig"; path = "Target Support Files/Pods-Production/Pods-Production.release.xcconfig"; sourceTree = "<group>"; };
+		BAD00A122401E3E20064D322 /* Stocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD00A152401E3E20064D322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD00A172401E3E20064D322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BAD00A192401E3E20064D322 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +41,12 @@
 		BAD00A1E2401E3E30064D322 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BAD00A212401E3E40064D322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD00A232401E3E40064D322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD00A2B2401EB1B0064D322 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAD00A512401EC1C0064D322 /* Stocket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stocket.entitlements; sourceTree = "<group>"; };
+		BAD00A742401EE020064D322 /* StocketiOS Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StocketiOS Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFC942F2401F63C00B5ACB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF65072E7C3EC2874CF975B3 /* Pods-Production.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Production.debug.xcconfig"; path = "Target Support Files/Pods-Production/Pods-Production.debug.xcconfig"; sourceTree = "<group>"; };
+		CE85DEB86F1FEE1B58EE2DC7 /* Pods_Development.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Development.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +54,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1736E0E6D46245D9F51B69B /* Pods_Production.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD00A6A2401EE020064D322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD472E08DB079126FBD993A /* Pods_Development.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F79222E8AEE5698EA6DFBAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13F7F420B92124F9247A7C31 /* Pods-Development.debug.xcconfig */,
+				09822502B8AC3692F8D4ED80 /* Pods-Development.release.xcconfig */,
+				BF65072E7C3EC2874CF975B3 /* Pods-Production.debug.xcconfig */,
+				52E72783F633A4D1F982D062 /* Pods-Production.release.xcconfig */,
+				400D59D787249A96E88C12F4 /* Pods-Staging.debug.xcconfig */,
+				1D52276C89E3BD28590635CD /* Pods-Staging.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7D7E9CE8361C34D39554301 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE85DEB86F1FEE1B58EE2DC7 /* Pods_Development.framework */,
+				0B981FC450D6090E967B19FE /* Pods_Production.framework */,
+				3EE3B9B03F772B05572DB064 /* Pods_Staging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAD00A092401E3E20064D322 = {
 			isa = PBXGroup;
 			children = (
 				BAD00A142401E3E20064D322 /* StocketiOS */,
 				BAD00A132401E3E20064D322 /* Products */,
+				5F79222E8AEE5698EA6DFBAF /* Pods */,
+				A7D7E9CE8361C34D39554301 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		BAD00A132401E3E20064D322 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BAD00A122401E3E20064D322 /* StocketiOS.app */,
+				BAD00A122401E3E20064D322 /* Stocket.app */,
+				BAD00A742401EE020064D322 /* StocketiOS Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +114,8 @@
 		BAD00A142401E3E20064D322 /* StocketiOS */ = {
 			isa = PBXGroup;
 			children = (
+				BAD00A512401EC1C0064D322 /* Stocket.entitlements */,
+				BAD00A292401EAF50064D322 /* Firebase */,
 				BAD00A152401E3E20064D322 /* AppDelegate.swift */,
 				BAD00A172401E3E20064D322 /* SceneDelegate.swift */,
 				BAD00A192401E3E20064D322 /* ContentView.swift */,
@@ -75,24 +135,70 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BAD00A292401EAF50064D322 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				BAFC942E2401F62A00B5ACB7 /* Prod */,
+				BAD00A2A2401EB000064D322 /* Dev */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		BAD00A2A2401EB000064D322 /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				BAD00A2B2401EB1B0064D322 /* GoogleService-Info.plist */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		BAFC942E2401F62A00B5ACB7 /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				BAFC942F2401F63C00B5ACB7 /* GoogleService-Info.plist */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BAD00A112401E3E20064D322 /* StocketiOS */ = {
+		BAD00A112401E3E20064D322 /* Production */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAD00A262401E3E40064D322 /* Build configuration list for PBXNativeTarget "StocketiOS" */;
+			buildConfigurationList = BAD00A262401E3E40064D322 /* Build configuration list for PBXNativeTarget "Production" */;
 			buildPhases = (
+				0298EA0CD32CFBBDECA9297F /* [CP] Check Pods Manifest.lock */,
 				BAD00A0E2401E3E20064D322 /* Sources */,
 				BAD00A0F2401E3E20064D322 /* Frameworks */,
 				BAD00A102401E3E20064D322 /* Resources */,
+				19A43C67041BEF5119DAE92D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StocketiOS;
+			name = Production;
 			productName = StocketiOS;
-			productReference = BAD00A122401E3E20064D322 /* StocketiOS.app */;
+			productReference = BAD00A122401E3E20064D322 /* Stocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAD00A642401EE020064D322 /* Development */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAD00A712401EE020064D322 /* Build configuration list for PBXNativeTarget "Development" */;
+			buildPhases = (
+				F96EFDD39BAEE78B635A63DA /* [CP] Check Pods Manifest.lock */,
+				BAD00A662401EE020064D322 /* Sources */,
+				BAD00A6A2401EE020064D322 /* Frameworks */,
+				BAD00A6C2401EE020064D322 /* Resources */,
+				4D5CD0E81FC8AE35D8BCC402 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Development;
+			productName = StocketiOS;
+			productReference = BAD00A742401EE020064D322 /* StocketiOS Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +229,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BAD00A112401E3E20064D322 /* StocketiOS */,
+				BAD00A112401E3E20064D322 /* Production */,
+				BAD00A642401EE020064D322 /* Development */,
 			);
 		};
 /* End PBXProject section */
@@ -134,12 +241,105 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD00A222401E3E40064D322 /* LaunchScreen.storyboard in Resources */,
+				BAFC94302401F63C00B5ACB7 /* GoogleService-Info.plist in Resources */,
 				BAD00A1F2401E3E30064D322 /* Preview Assets.xcassets in Resources */,
 				BAD00A1C2401E3E30064D322 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAD00A6C2401EE020064D322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD00A6D2401EE020064D322 /* LaunchScreen.storyboard in Resources */,
+				BAFC942D2401F5B400B5ACB7 /* GoogleService-Info.plist in Resources */,
+				BAD00A6F2401EE020064D322 /* Preview Assets.xcassets in Resources */,
+				BAD00A702401EE020064D322 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0298EA0CD32CFBBDECA9297F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Production-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19A43C67041BEF5119DAE92D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Production/Pods-Production-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Production/Pods-Production-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Production/Pods-Production-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D5CD0E81FC8AE35D8BCC402 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Development/Pods-Development-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Development/Pods-Development-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Development/Pods-Development-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F96EFDD39BAEE78B635A63DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Development-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAD00A0E2401E3E20064D322 /* Sources */ = {
@@ -149,6 +349,16 @@
 				BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */,
 				BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */,
 				BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD00A662401EE020064D322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD00A672401EE020064D322 /* AppDelegate.swift in Sources */,
+				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
+				BAD00A692401EE020064D322 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +492,11 @@
 		};
 		BAD00A272401E3E40064D322 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF65072E7C3EC2874CF975B3 /* Pods-Production.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StocketiOS/Stocket.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StocketiOS/Preview Content\"";
 				DEVELOPMENT_TEAM = M52W2L8ZQV;
@@ -294,7 +507,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.StocketiOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Stocket;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,8 +515,11 @@
 		};
 		BAD00A282401E3E40064D322 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E72783F633A4D1F982D062 /* Pods-Production.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StocketiOS/Stocket.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StocketiOS/Preview Content\"";
 				DEVELOPMENT_TEAM = M52W2L8ZQV;
@@ -314,7 +530,51 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.StocketiOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Stocket;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAD00A722401EE020064D322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13F7F420B92124F9247A7C31 /* Pods-Development.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StocketiOS/Stocket.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StocketiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = M52W2L8ZQV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StocketiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.StocketiOS.Dev;
+				PRODUCT_NAME = "StocketiOS Dev";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAD00A732401EE020064D322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09822502B8AC3692F8D4ED80 /* Pods-Development.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StocketiOS/Stocket.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StocketiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = M52W2L8ZQV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StocketiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.corasan.StocketiOS.Dev;
+				PRODUCT_NAME = "StocketiOS Dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,11 +592,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BAD00A262401E3E40064D322 /* Build configuration list for PBXNativeTarget "StocketiOS" */ = {
+		BAD00A262401E3E40064D322 /* Build configuration list for PBXNativeTarget "Production" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BAD00A272401E3E40064D322 /* Debug */,
 				BAD00A282401E3E40064D322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAD00A712401EE020064D322 /* Build configuration list for PBXNativeTarget "Development" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAD00A722401EE020064D322 /* Debug */,
+				BAD00A732401EE020064D322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

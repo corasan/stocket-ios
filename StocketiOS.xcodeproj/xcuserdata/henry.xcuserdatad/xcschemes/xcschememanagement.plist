@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Development.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>StocketiOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BAD00A112401E3E20064D322</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAD00A522401EE000064D322</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAD00A642401EE020064D322</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
