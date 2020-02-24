@@ -16,3 +16,12 @@ class StocketColors {
     static let gray: Color = Color(red:0.92, green:0.92, blue:0.92, opacity:1.0)
     static let grayDarker: Color = Color(red:0.64, green:0.64, blue:0.64, opacity:1.0)
 }
+
+class StocketUIColors {
+    static let black: UIColor = UIColor(red:0.13, green:0.13, blue:0.13, alpha:1.0)
+    static let blackLight: UIColor = UIColor(red:0.36, green:0.36, blue:0.36, alpha:1.0)
+    static let green: UIColor = UIColor(red:0.55, green:0.84, blue:0.51, alpha:1.0)
+    static let red: UIColor = UIColor(red:0.92, green:0.27, blue:0.35, alpha:1.0)
+    static let gray: UIColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.0)
+    static let grayDarker: UIColor = UIColor(red:0.64, green:0.64, blue:0.64, alpha:1.0)
+}
