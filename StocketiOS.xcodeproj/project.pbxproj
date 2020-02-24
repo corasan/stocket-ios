@@ -33,6 +33,10 @@
 		BA65851E240357D20094321E /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65851C240357D20094321E /* Portfolio.swift */; };
 		BA6585202404718B0094321E /* PortfolioHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65851F2404718B0094321E /* PortfolioHome.swift */; };
 		BA6585212404718B0094321E /* PortfolioHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65851F2404718B0094321E /* PortfolioHome.swift */; };
+		BA658524240493440094321E /* TradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA658523240493440094321E /* TradeView.swift */; };
+		BA658525240493440094321E /* TradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA658523240493440094321E /* TradeView.swift */; };
+		BA658527240495C70094321E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA658526240495C70094321E /* SettingsView.swift */; };
+		BA658528240495C70094321E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA658526240495C70094321E /* SettingsView.swift */; };
 		BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A152401E3E20064D322 /* AppDelegate.swift */; };
 		BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A172401E3E20064D322 /* SceneDelegate.swift */; };
 		BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A192401E3E20064D322 /* ContentView.swift */; };
@@ -99,6 +103,8 @@
 		BA5B38412403075B006EE5C7 /* PortfolioItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItem.swift; sourceTree = "<group>"; };
 		BA65851C240357D20094321E /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		BA65851F2404718B0094321E /* PortfolioHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioHome.swift; sourceTree = "<group>"; };
+		BA658523240493440094321E /* TradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeView.swift; sourceTree = "<group>"; };
+		BA658526240495C70094321E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BAD00A122401E3E20064D322 /* Stocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD00A152401E3E20064D322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD00A172401E3E20064D322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +203,8 @@
 				BA5B382A24021BB4006EE5C7 /* LoginView.swift */,
 				BA5B383A24023D44006EE5C7 /* HomeView.swift */,
 				BA5B383424022ACC006EE5C7 /* MainTabView.swift */,
+				BA658523240493440094321E /* TradeView.swift */,
+				BA658526240495C70094321E /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -557,6 +565,8 @@
 				BA5B382B24021BB4006EE5C7 /* LoginView.swift in Sources */,
 				BA5B383524022ACC006EE5C7 /* MainTabView.swift in Sources */,
 				BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */,
+				BA658527240495C70094321E /* SettingsView.swift in Sources */,
+				BA658524240493440094321E /* TradeView.swift in Sources */,
 				BA5B383B24023D44006EE5C7 /* HomeView.swift in Sources */,
 				BA6585202404718B0094321E /* PortfolioHome.swift in Sources */,
 				BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
@@ -579,6 +589,8 @@
 				BAD00A672401EE020064D322 /* AppDelegate.swift in Sources */,
 				BA5B382424021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BA5B382E24021C38006EE5C7 /* StocketColors.swift in Sources */,
+				BA658528240495C70094321E /* SettingsView.swift in Sources */,
+				BA658525240493440094321E /* TradeView.swift in Sources */,
 				BA5B383C24023D44006EE5C7 /* HomeView.swift in Sources */,
 				BA6585212404718B0094321E /* PortfolioHome.swift in Sources */,
 				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
