@@ -9,6 +9,34 @@
 /* Begin PBXBuildFile section */
 		4CD472E08DB079126FBD993A /* Pods_Development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE85DEB86F1FEE1B58EE2DC7 /* Pods_Development.framework */; };
 		A1736E0E6D46245D9F51B69B /* Pods_Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B981FC450D6090E967B19FE /* Pods_Production.framework */; };
+		BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */; };
+		BA5B382424021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */; };
+		BA5B382524021931006EE5C7 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382124021931006EE5C7 /* AppleSignIn.swift */; };
+		BA5B382624021931006EE5C7 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382124021931006EE5C7 /* AppleSignIn.swift */; };
+		BA5B382724021931006EE5C7 /* AppleSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382224021931006EE5C7 /* AppleSignInController.swift */; };
+		BA5B382824021931006EE5C7 /* AppleSignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382224021931006EE5C7 /* AppleSignInController.swift */; };
+		BA5B382B24021BB4006EE5C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382A24021BB4006EE5C7 /* LoginView.swift */; };
+		BA5B382E24021C38006EE5C7 /* StocketColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382C24021C24006EE5C7 /* StocketColors.swift */; };
+		BA5B382F24021E15006EE5C7 /* StocketColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382C24021C24006EE5C7 /* StocketColors.swift */; };
+		BA5B3832240227C1006EE5C7 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B3831240227C1006EE5C7 /* AuthState.swift */; };
+		BA5B383324022A2E006EE5C7 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B3831240227C1006EE5C7 /* AuthState.swift */; };
+		BA5B383524022ACC006EE5C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B383424022ACC006EE5C7 /* MainTabView.swift */; };
+		BA5B383624022AFF006EE5C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B383424022ACC006EE5C7 /* MainTabView.swift */; };
+		BA5B383724022B07006EE5C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382A24021BB4006EE5C7 /* LoginView.swift */; };
+		BA5B383B24023D44006EE5C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B383A24023D44006EE5C7 /* HomeView.swift */; };
+		BA5B383C24023D44006EE5C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B383A24023D44006EE5C7 /* HomeView.swift */; };
+		BA5B383E2402434A006EE5C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B383D2402434A006EE5C7 /* User.swift */; };
+		BA5B383F2402434A006EE5C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B383D2402434A006EE5C7 /* User.swift */; };
+		BA5B38422403075B006EE5C7 /* PortfolioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B38412403075B006EE5C7 /* PortfolioItem.swift */; };
+		BA5B38432403075B006EE5C7 /* PortfolioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B38412403075B006EE5C7 /* PortfolioItem.swift */; };
+		BA65851D240357D20094321E /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65851C240357D20094321E /* Portfolio.swift */; };
+		BA65851E240357D20094321E /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65851C240357D20094321E /* Portfolio.swift */; };
+		BA6585202404718B0094321E /* PortfolioHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65851F2404718B0094321E /* PortfolioHome.swift */; };
+		BA6585212404718B0094321E /* PortfolioHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65851F2404718B0094321E /* PortfolioHome.swift */; };
+		BA658524240493440094321E /* TradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA658523240493440094321E /* TradeView.swift */; };
+		BA658525240493440094321E /* TradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA658523240493440094321E /* TradeView.swift */; };
+		BA658527240495C70094321E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA658526240495C70094321E /* SettingsView.swift */; };
+		BA658528240495C70094321E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA658526240495C70094321E /* SettingsView.swift */; };
 		BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A152401E3E20064D322 /* AppDelegate.swift */; };
 		BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A172401E3E20064D322 /* SceneDelegate.swift */; };
 		BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A192401E3E20064D322 /* ContentView.swift */; };
@@ -63,6 +91,20 @@
 		52E72783F633A4D1F982D062 /* Pods-Production.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Production.release.xcconfig"; path = "Target Support Files/Pods-Production/Pods-Production.release.xcconfig"; sourceTree = "<group>"; };
 		94FB3E6D364E2BF07C512A72 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		ABBE32EF03D4388040F73217 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInCoordinator.swift; sourceTree = "<group>"; };
+		BA5B382124021931006EE5C7 /* AppleSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
+		BA5B382224021931006EE5C7 /* AppleSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInController.swift; sourceTree = "<group>"; };
+		BA5B382A24021BB4006EE5C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BA5B382C24021C24006EE5C7 /* StocketColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocketColors.swift; sourceTree = "<group>"; };
+		BA5B3831240227C1006EE5C7 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		BA5B383424022ACC006EE5C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		BA5B383A24023D44006EE5C7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BA5B383D2402434A006EE5C7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BA5B38412403075B006EE5C7 /* PortfolioItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItem.swift; sourceTree = "<group>"; };
+		BA65851C240357D20094321E /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		BA65851F2404718B0094321E /* PortfolioHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioHome.swift; sourceTree = "<group>"; };
+		BA658523240493440094321E /* TradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeView.swift; sourceTree = "<group>"; };
+		BA658526240495C70094321E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BAD00A122401E3E20064D322 /* Stocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD00A152401E3E20064D322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD00A172401E3E20064D322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +179,62 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA5B381F240218E4006EE5C7 /* AppleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B382124021931006EE5C7 /* AppleSignIn.swift */,
+				BA5B382224021931006EE5C7 /* AppleSignInController.swift */,
+				BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */,
+			);
+			path = AppleSignIn;
+			sourceTree = "<group>";
+		};
+		BA5B38402403054F006EE5C7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B38412403075B006EE5C7 /* PortfolioItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BA5B384524032097006EE5C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B382A24021BB4006EE5C7 /* LoginView.swift */,
+				BA5B383A24023D44006EE5C7 /* HomeView.swift */,
+				BA5B383424022ACC006EE5C7 /* MainTabView.swift */,
+				BA658523240493440094321E /* TradeView.swift */,
+				BA658526240495C70094321E /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA5B3846240320C6006EE5C7 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				BA65851F2404718B0094321E /* PortfolioHome.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		BA5B384724032C34006EE5C7 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B3831240227C1006EE5C7 /* AuthState.swift */,
+				BA5B382C24021C24006EE5C7 /* StocketColors.swift */,
+				BA5B383D2402434A006EE5C7 /* User.swift */,
+				BA65851C240357D20094321E /* Portfolio.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		BA658522240475B80094321E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BAD00A092401E3E20064D322 = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +259,12 @@
 		BAD00A142401E3E20064D322 /* StocketiOS */ = {
 			isa = PBXGroup;
 			children = (
-				BAD00A512401EC1C0064D322 /* Stocket.entitlements */,
+				BA658522240475B80094321E /* Models */,
+				BA5B384724032C34006EE5C7 /* Stores */,
+				BA5B3846240320C6006EE5C7 /* Containers */,
+				BA5B384524032097006EE5C7 /* Views */,
+				BA5B38402403054F006EE5C7 /* Components */,
+				BA5B381F240218E4006EE5C7 /* AppleSignIn */,
 				BAD00A292401EAF50064D322 /* Firebase */,
 				BAD00A152401E3E20064D322 /* AppDelegate.swift */,
 				BAD00A172401E3E20064D322 /* SceneDelegate.swift */,
@@ -169,6 +272,7 @@
 				BAD00A1B2401E3E30064D322 /* Assets.xcassets */,
 				BAD00A202401E3E40064D322 /* LaunchScreen.storyboard */,
 				BAD00A232401E3E40064D322 /* Info.plist */,
+				BAD00A512401EC1C0064D322 /* Stocket.entitlements */,
 				BAD00A1D2401E3E30064D322 /* Preview Content */,
 			);
 			path = StocketiOS;
@@ -456,9 +560,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5B382724021931006EE5C7 /* AppleSignInController.swift in Sources */,
+				BA5B3832240227C1006EE5C7 /* AuthState.swift in Sources */,
+				BA5B382B24021BB4006EE5C7 /* LoginView.swift in Sources */,
+				BA5B383524022ACC006EE5C7 /* MainTabView.swift in Sources */,
 				BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */,
+				BA658527240495C70094321E /* SettingsView.swift in Sources */,
+				BA658524240493440094321E /* TradeView.swift in Sources */,
+				BA5B383B24023D44006EE5C7 /* HomeView.swift in Sources */,
+				BA6585202404718B0094321E /* PortfolioHome.swift in Sources */,
+				BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */,
+				BA5B38422403075B006EE5C7 /* PortfolioItem.swift in Sources */,
+				BA5B383E2402434A006EE5C7 /* User.swift in Sources */,
+				BA5B382F24021E15006EE5C7 /* StocketColors.swift in Sources */,
 				BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */,
+				BA65851D240357D20094321E /* Portfolio.swift in Sources */,
+				BA5B382524021931006EE5C7 /* AppleSignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,9 +584,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5B382824021931006EE5C7 /* AppleSignInController.swift in Sources */,
+				BA5B383624022AFF006EE5C7 /* MainTabView.swift in Sources */,
 				BAD00A672401EE020064D322 /* AppDelegate.swift in Sources */,
+				BA5B382424021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
+				BA5B382E24021C38006EE5C7 /* StocketColors.swift in Sources */,
+				BA658528240495C70094321E /* SettingsView.swift in Sources */,
+				BA658525240493440094321E /* TradeView.swift in Sources */,
+				BA5B383C24023D44006EE5C7 /* HomeView.swift in Sources */,
+				BA6585212404718B0094321E /* PortfolioHome.swift in Sources */,
 				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
+				BA5B383324022A2E006EE5C7 /* AuthState.swift in Sources */,
+				BA5B38432403075B006EE5C7 /* PortfolioItem.swift in Sources */,
+				BA5B383F2402434A006EE5C7 /* User.swift in Sources */,
 				BAD00A692401EE020064D322 /* ContentView.swift in Sources */,
+				BA5B383724022B07006EE5C7 /* LoginView.swift in Sources */,
+				BA65851E240357D20094321E /* Portfolio.swift in Sources */,
+				BA5B382624021931006EE5C7 /* AppleSignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
