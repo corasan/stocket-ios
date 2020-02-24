@@ -26,7 +26,7 @@ struct LoginView: View {
             }
             Spacer()
         }
-        .background(Color.black.edgesIgnoringSafeArea(.all))
+//        .background(Color.black.edgesIgnoringSafeArea(.all))
     }
 }
 

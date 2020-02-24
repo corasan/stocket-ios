@@ -15,7 +15,7 @@ struct MainTabView: View {
                 Text("Home")
             })
         }
-        .background(StocketColors.black.edgesIgnoringSafeArea(.all))
+        .background(Color("background").edgesIgnoringSafeArea(.all))
     }
 }
 

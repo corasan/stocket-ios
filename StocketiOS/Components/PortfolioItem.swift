@@ -9,28 +9,28 @@
 import SwiftUI
 
 struct PortfolioItem: View {
-//    var item: Dictionary<String, Any>
-//
-//    init(item: Dictionary<String, Any>) {
-//        self.item = item
-//    }
+    var position: Position
+    
+    init(position: Position) {
+        self.position = position
+    }
     
     var body: some View {
         VStack {
             HStack {
-                Text("MSFT")
+                Text(self.position.symbol)
                     .font(.headline)
                 Spacer()
-                Text("$1,000")
+                Text("$\(self.position.value)")
                     .font(.headline)
             }
             HStack {
-                Text("Microsoft")
-                    .font(.subheadline)
-                    .padding(.top, 5)
-                    .foregroundColor(StocketColors.grayDarker)
+//                Text("Microsoft")
+//                    .font(.subheadline)
+//                    .padding(.top, 5)
+//                    .foregroundColor(StocketColors.grayDarker)
                 Spacer()
-                Text("$30.5 (3%)")
+                Text("$\(self.position.gains) (\(self.position.gainsPercentage)%)")
                     .font(.subheadline)
                     .foregroundColor(StocketColors.green)
                     
@@ -38,13 +38,19 @@ struct PortfolioItem: View {
         }
         .foregroundColor(StocketColors.gray)
         .padding()
-        .background(Color.black)
-//        .border()
     }
 }
 
 struct PortfolioItem_Previews: PreviewProvider {
+    static var pos = Position(
+        id: "abc",
+        gains: "10.00",
+        gainsPercentage: "3.00",
+        symbol: "AAPL",
+        value: "298.87"
+    )
+
     static var previews: some View {
-        PortfolioItem()
+        PortfolioItem(position: pos)
     }
 }

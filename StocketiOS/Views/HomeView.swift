@@ -15,7 +15,7 @@ struct HomeView: View {
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: StocketUIColors.grayDarker]
-        UINavigationBar.appearance().backgroundColor = UIColor.black
+//        UINavigationBar.appearance().backgroundColor = UIColor.black
     }
 
     var body: some View {
@@ -33,15 +33,12 @@ struct HomeView: View {
                 Spacer()
                 HStack {
                     Spacer()
-//                    if !self.user.data.isEmpty {
-//                        Text(self.user.data["email"] as! String)
-//                            .foregroundColor(.blue)
-//                    }
+                    PortfolioHome()
                     Spacer()
                 }
-                PortfolioListSmall()
+                
             }
-            .background(Color.black.edgesIgnoringSafeArea(.all))
+//            .background(Color.black.edgesIgnoringSafeArea(.all))
             .navigationBarTitle("Portfolio", displayMode: .large)
             .foregroundColor(.white)
         }
