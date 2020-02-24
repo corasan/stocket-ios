@@ -18,7 +18,7 @@ struct ContentView: View {
             if !authState.isAuth {
                 LoginView()
             } else {
-                MainView()
+                MainTabView()
             }
         }
         .onAppear {
