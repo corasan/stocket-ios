@@ -1,4 +1,4 @@
-name: CI
+name: Build Stocket
 
 on:
   pull_request:
@@ -10,13 +10,9 @@ jobs:
   build:
 
     runs-on: macos-latest
-    
-    strategy:
-      matrix:
-        destination: ["platform=iOS Simulator,OS=13.1,name=iPhone 11 Pro"]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build
-        run: xcodebuild clean test -project StocketiOS.xcodeproj -scheme Development -destination "platform=iOS Simulator,OS=13.1,name=iPhone 11 Pro" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        run: xcodebuild clean -project StocketiOS.xcodeproj -scheme Development -destination "platform=iOS Simulator,OS=13.1,name=iPhone 11 Pro" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
