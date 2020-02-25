@@ -1,0 +1,21 @@
+name: Build Stocket
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+  
+      - name: Install Pods
+        run: pod install
+  
+      - name: Build
+        run: xcodebuild clean build -workspace StocketiOS.xcworkspace -scheme Development -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
