@@ -15,4 +15,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build
-        run: xcodebuild clean -project StocketiOS.xcodeproj -scheme Development -destination "platform=iOS Simulator,OS=13.1,name=iPhone 11 Pro" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        run: xcodebuild clean -project StocketiOS.xcodeproj -scheme Development -destination "platform:iOS Simulator, id:97032D9C-0D98-4323-9B99-7531E3F91664, OS:13.3, name:iPhone 11 Pro" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
