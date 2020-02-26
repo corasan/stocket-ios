@@ -11,12 +11,7 @@ import FirebaseFirestore
 import FirebaseAuth
 
 struct HomeView: View {
-    @ObservedObject var user = User()
-    
-    init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: StocketUIColors.grayDarker]
-//        UINavigationBar.appearance().backgroundColor = UIColor.black
-    }
+//    @ObservedObject var user = User()
 
     var body: some View {
         NavigationView {
@@ -30,26 +25,27 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding()
-                Spacer()
+//                Spacer()
                 HStack {
                     Spacer()
                     PortfolioHome()
                     Spacer()
                 }
-                
+                YourStocks()
+                Spacer()
             }
-//            .background(Color.black.edgesIgnoringSafeArea(.all))
             .navigationBarTitle("Portfolio", displayMode: .large)
-            .foregroundColor(.white)
+            .background(Color("background").edgesIgnoringSafeArea(.all))
         }
-        .onAppear {
-            self.user.getUserData()
-        }
+        
+//        .onAppear {
+//            self.user.getUserData()
+//        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView().environment(\.colorScheme, .dark)
     }
 }

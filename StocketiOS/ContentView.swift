@@ -27,6 +27,7 @@ struct ContentView: View {
         .onDisappear {
             self.authState.stopListening()
         }
+    .background(Color("background"))
     }
 }
 
