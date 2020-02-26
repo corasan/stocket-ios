@@ -14,7 +14,7 @@ struct HomeView: View {
 //    @ObservedObject var user = User()
 
     var body: some View {
-        NavigationView {
+        ScrollView {
             VStack {
                 HStack {
                     VStack(alignment: .leading) {

@@ -40,7 +40,6 @@ struct WatchlistContainer: View {
                 let res = result as! [String: Any]
                 for i in res["data"] as! [[String: String]] {
                     self.stocks.append(i)
-                    print(self.stocks)
                 }
             case let .failure(err):
                 print(err)
