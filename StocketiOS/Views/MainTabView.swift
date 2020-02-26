@@ -28,16 +28,14 @@ struct MainTabView: View {
         }
         .accentColor(Color("tabAccent"))
         .background(Color("background").edgesIgnoringSafeArea(.all))
-        .onAppear {
-            self.watchlist.loadData()
-        }
+        .onAppear(perform: self.watchlist.subscribe)
+        .onDisappear(perform: self.watchlist.unsubscribe)
     }
 }
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
-//            .environmentObject(Watchlist())
             .environment(\.colorScheme, .dark)
     }
 }

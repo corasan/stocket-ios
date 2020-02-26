@@ -44,6 +44,7 @@ struct YourStocks: View {
             }
         }
         .padding()
+        .padding(.top, 25)
     }
 }
 
