@@ -9,7 +9,7 @@
 import SwiftUI
 import Alamofire
 
-struct WatchlistContainer: View {
+struct WatchlistList: View {
     @State var stocks = [[String: String]]()
     @EnvironmentObject var watchlist: Watchlist
 
@@ -32,8 +32,8 @@ struct WatchlistContainer: View {
     }
 }
 
-struct WatchlistContainer_Previews: PreviewProvider {
+struct WatchlistList_Previews: PreviewProvider {
     static var previews: some View {
-        WatchlistContainer().environmentObject(Watchlist())
+        WatchlistList().environmentObject(Watchlist())
     }
 }

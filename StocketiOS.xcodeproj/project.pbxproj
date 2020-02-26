@@ -39,8 +39,8 @@
 		BA658528240495C70094321E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA658526240495C70094321E /* SettingsView.swift */; };
 		BA7055332405F11D002BED20 /* YourStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7055322405F11D002BED20 /* YourStocks.swift */; };
 		BA7055342405F11D002BED20 /* YourStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7055322405F11D002BED20 /* YourStocks.swift */; };
-		BA70553624063138002BED20 /* WatchlistContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553524063138002BED20 /* WatchlistContainer.swift */; };
-		BA70553724063138002BED20 /* WatchlistContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553524063138002BED20 /* WatchlistContainer.swift */; };
+		BA70553624063138002BED20 /* WatchlistList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553524063138002BED20 /* WatchlistList.swift */; };
+		BA70553724063138002BED20 /* WatchlistList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553524063138002BED20 /* WatchlistList.swift */; };
 		BA705539240648B9002BED20 /* WatchlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA705538240648B9002BED20 /* WatchlistItem.swift */; };
 		BA70553A240648B9002BED20 /* WatchlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA705538240648B9002BED20 /* WatchlistItem.swift */; };
 		BA70553C2406F840002BED20 /* Watchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553B2406F840002BED20 /* Watchlist.swift */; };
@@ -114,7 +114,7 @@
 		BA658523240493440094321E /* TradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeView.swift; sourceTree = "<group>"; };
 		BA658526240495C70094321E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BA7055322405F11D002BED20 /* YourStocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourStocks.swift; sourceTree = "<group>"; };
-		BA70553524063138002BED20 /* WatchlistContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistContainer.swift; sourceTree = "<group>"; };
+		BA70553524063138002BED20 /* WatchlistList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistList.swift; sourceTree = "<group>"; };
 		BA705538240648B9002BED20 /* WatchlistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistItem.swift; sourceTree = "<group>"; };
 		BA70553B2406F840002BED20 /* Watchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watchlist.swift; sourceTree = "<group>"; };
 		BAD00A122401E3E20064D322 /* Stocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,64 +191,100 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BA5B381F240218E4006EE5C7 /* AppleSignIn */ = {
+		BA70553E24071E19002BED20 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				BA5B382124021931006EE5C7 /* AppleSignIn.swift */,
-				BA5B382224021931006EE5C7 /* AppleSignInController.swift */,
-				BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */,
+				BA70554F240721D6002BED20 /* AppleSignIn */,
+				BA70554E240721A4002BED20 /* Watchlist */,
+				BA70554B2407202B002BED20 /* TabView */,
+				BA70554A24072013002BED20 /* Portfolio */,
+				BA70554824071F9C002BED20 /* Trade */,
+				BA70554624071F83002BED20 /* Settings */,
+				BA70554324071EDF002BED20 /* Home */,
+				BA70553F24071E2E002BED20 /* Login */,
 			);
-			path = AppleSignIn;
+			path = Features;
 			sourceTree = "<group>";
 		};
-		BA5B38402403054F006EE5C7 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				BA5B38412403075B006EE5C7 /* PortfolioItem.swift */,
-				BA705538240648B9002BED20 /* WatchlistItem.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		BA5B384524032097006EE5C7 /* Views */ = {
+		BA70553F24071E2E002BED20 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				BA5B382A24021BB4006EE5C7 /* LoginView.swift */,
-				BA5B383A24023D44006EE5C7 /* HomeView.swift */,
-				BA5B383424022ACC006EE5C7 /* MainTabView.swift */,
-				BA658523240493440094321E /* TradeView.swift */,
-				BA658526240495C70094321E /* SettingsView.swift */,
 			);
-			path = Views;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		BA5B3846240320C6006EE5C7 /* Containers */ = {
+		BA70554324071EDF002BED20 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B383A24023D44006EE5C7 /* HomeView.swift */,
+				BA7055322405F11D002BED20 /* YourStocks.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BA70554624071F83002BED20 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BA658526240495C70094321E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BA70554824071F9C002BED20 /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+				BA658523240493440094321E /* TradeView.swift */,
+			);
+			path = Trade;
+			sourceTree = "<group>";
+		};
+		BA70554A24072013002BED20 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
 				BA65851F2404718B0094321E /* PortfolioHome.swift */,
-				BA7055322405F11D002BED20 /* YourStocks.swift */,
-				BA70553524063138002BED20 /* WatchlistContainer.swift */,
+				BA5B38412403075B006EE5C7 /* PortfolioItem.swift */,
 			);
-			path = Containers;
+			path = Portfolio;
 			sourceTree = "<group>";
 		};
-		BA5B384724032C34006EE5C7 /* Stores */ = {
+		BA70554B2407202B002BED20 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
+				BA5B383424022ACC006EE5C7 /* MainTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		BA70554D24072116002BED20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA70553B2406F840002BED20 /* Watchlist.swift */,
 				BA5B3831240227C1006EE5C7 /* AuthState.swift */,
 				BA5B382C24021C24006EE5C7 /* StocketColors.swift */,
 				BA5B383D2402434A006EE5C7 /* User.swift */,
 				BA65851C240357D20094321E /* Portfolio.swift */,
-				BA70553B2406F840002BED20 /* Watchlist.swift */,
-			);
-			path = Stores;
-			sourceTree = "<group>";
-		};
-		BA658522240475B80094321E /* Models */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BA70554E240721A4002BED20 /* Watchlist */ = {
+			isa = PBXGroup;
+			children = (
+				BA70553524063138002BED20 /* WatchlistList.swift */,
+				BA705538240648B9002BED20 /* WatchlistItem.swift */,
+			);
+			path = Watchlist;
+			sourceTree = "<group>";
+		};
+		BA70554F240721D6002BED20 /* AppleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				BA5B382124021931006EE5C7 /* AppleSignIn.swift */,
+				BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */,
+				BA5B382224021931006EE5C7 /* AppleSignInController.swift */,
+			);
+			path = AppleSignIn;
 			sourceTree = "<group>";
 		};
 		BAD00A092401E3E20064D322 = {
@@ -275,12 +311,8 @@
 		BAD00A142401E3E20064D322 /* StocketiOS */ = {
 			isa = PBXGroup;
 			children = (
-				BA658522240475B80094321E /* Models */,
-				BA5B384724032C34006EE5C7 /* Stores */,
-				BA5B3846240320C6006EE5C7 /* Containers */,
-				BA5B384524032097006EE5C7 /* Views */,
-				BA5B38402403054F006EE5C7 /* Components */,
-				BA5B381F240218E4006EE5C7 /* AppleSignIn */,
+				BA70554D24072116002BED20 /* Models */,
+				BA70553E24071E19002BED20 /* Features */,
 				BAD00A292401EAF50064D322 /* Firebase */,
 				BAD00A152401E3E20064D322 /* AppDelegate.swift */,
 				BAD00A172401E3E20064D322 /* SceneDelegate.swift */,
@@ -589,7 +621,7 @@
 				BA6585202404718B0094321E /* PortfolioHome.swift in Sources */,
 				BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */,
-				BA70553624063138002BED20 /* WatchlistContainer.swift in Sources */,
+				BA70553624063138002BED20 /* WatchlistList.swift in Sources */,
 				BA5B38422403075B006EE5C7 /* PortfolioItem.swift in Sources */,
 				BA5B383E2402434A006EE5C7 /* User.swift in Sources */,
 				BA5B382F24021E15006EE5C7 /* StocketColors.swift in Sources */,
@@ -617,7 +649,7 @@
 				BA6585212404718B0094321E /* PortfolioHome.swift in Sources */,
 				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
 				BA5B383324022A2E006EE5C7 /* AuthState.swift in Sources */,
-				BA70553724063138002BED20 /* WatchlistContainer.swift in Sources */,
+				BA70553724063138002BED20 /* WatchlistList.swift in Sources */,
 				BA5B38432403075B006EE5C7 /* PortfolioItem.swift in Sources */,
 				BA5B383F2402434A006EE5C7 /* User.swift in Sources */,
 				BAD00A692401EE020064D322 /* ContentView.swift in Sources */,
