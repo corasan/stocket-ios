@@ -25,12 +25,7 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding()
-//                Spacer()
-                HStack {
-                    Spacer()
-                    PortfolioHome()
-                    Spacer()
-                }
+                WatchlistContainer()
                 YourStocks()
                 Spacer()
             }
