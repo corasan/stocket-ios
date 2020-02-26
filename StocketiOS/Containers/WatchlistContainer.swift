@@ -11,6 +11,8 @@ import Alamofire
 
 struct WatchlistContainer: View {
     @State var stocks = [[String: String]]()
+    @EnvironmentObject var watchlist: Watchlist
+
     var body: some View {
         VStack {
             HStack {
@@ -22,34 +24,16 @@ struct WatchlistContainer: View {
                 Spacer()
             }
             
-            ForEach(stocks, id: \.self) { stock in
+            ForEach(self.watchlist.data, id: \.self) { stock in
                 WatchlistItem(symbol: stock["symbol"]!, price: stock["price"]!, name: stock["name"]!, gains: stock["day_change"]!, changePct: stock["change_pct"]!)
             }
         }
         .padding()
-        .onAppear(perform: loadData)
-    }
-
-    func loadData() {
-        let api = "https://api.worldtradingdata.com/api/v1/stock"
-        let apiKey = "UJe0U0CAY6QcikCVX5nXPtfxOCOnxrPlUQNWeeOZYiUanAhS4lXS3Z0yJaBa"
-        
-        AF.request("\(api)?symbol=AAPL,MSFT&date=2019-01-02&api_token=\(apiKey)").responseJSON { response in
-            switch response.result {
-            case let .success(result):
-                let res = result as! [String: Any]
-                for i in res["data"] as! [[String: String]] {
-                    self.stocks.append(i)
-                }
-            case let .failure(err):
-                print(err)
-            }
-        }
     }
 }
 
 struct WatchlistContainer_Previews: PreviewProvider {
     static var previews: some View {
-        WatchlistContainer()
+        WatchlistContainer().environmentObject(Watchlist())
     }
 }

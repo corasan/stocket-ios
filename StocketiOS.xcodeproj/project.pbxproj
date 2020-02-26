@@ -43,6 +43,8 @@
 		BA70553724063138002BED20 /* WatchlistContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553524063138002BED20 /* WatchlistContainer.swift */; };
 		BA705539240648B9002BED20 /* WatchlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA705538240648B9002BED20 /* WatchlistItem.swift */; };
 		BA70553A240648B9002BED20 /* WatchlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA705538240648B9002BED20 /* WatchlistItem.swift */; };
+		BA70553C2406F840002BED20 /* Watchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553B2406F840002BED20 /* Watchlist.swift */; };
+		BA70553D2406F840002BED20 /* Watchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553B2406F840002BED20 /* Watchlist.swift */; };
 		BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A152401E3E20064D322 /* AppDelegate.swift */; };
 		BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A172401E3E20064D322 /* SceneDelegate.swift */; };
 		BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A192401E3E20064D322 /* ContentView.swift */; };
@@ -114,6 +116,7 @@
 		BA7055322405F11D002BED20 /* YourStocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourStocks.swift; sourceTree = "<group>"; };
 		BA70553524063138002BED20 /* WatchlistContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistContainer.swift; sourceTree = "<group>"; };
 		BA705538240648B9002BED20 /* WatchlistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistItem.swift; sourceTree = "<group>"; };
+		BA70553B2406F840002BED20 /* Watchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watchlist.swift; sourceTree = "<group>"; };
 		BAD00A122401E3E20064D322 /* Stocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD00A152401E3E20064D322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD00A172401E3E20064D322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -236,6 +239,7 @@
 				BA5B382C24021C24006EE5C7 /* StocketColors.swift */,
 				BA5B383D2402434A006EE5C7 /* User.swift */,
 				BA65851C240357D20094321E /* Portfolio.swift */,
+				BA70553B2406F840002BED20 /* Watchlist.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -592,6 +596,7 @@
 				BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */,
 				BA65851D240357D20094321E /* Portfolio.swift in Sources */,
 				BA5B382524021931006EE5C7 /* AppleSignIn.swift in Sources */,
+				BA70553C2406F840002BED20 /* Watchlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +624,7 @@
 				BA5B383724022B07006EE5C7 /* LoginView.swift in Sources */,
 				BA65851E240357D20094321E /* Portfolio.swift in Sources */,
 				BA5B382624021931006EE5C7 /* AppleSignIn.swift in Sources */,
+				BA70553D2406F840002BED20 /* Watchlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

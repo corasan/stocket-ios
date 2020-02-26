@@ -12,6 +12,7 @@ import FirebaseAuth
 
 struct HomeView: View {
 //    @ObservedObject var user = User()
+//    @EnvironmentObject var watchlist: Watchlist
 
     var body: some View {
         ScrollView {
@@ -30,7 +31,6 @@ struct HomeView: View {
                 Spacer()
             }
             .navigationBarTitle("Portfolio", displayMode: .large)
-            .background(Color("background").edgesIgnoringSafeArea(.all))
         }
         
 //        .onAppear {
@@ -41,6 +41,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView().environment(\.colorScheme, .dark)
+        HomeView()
     }
 }
