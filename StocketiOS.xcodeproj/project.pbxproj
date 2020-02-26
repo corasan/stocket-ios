@@ -45,6 +45,8 @@
 		BA70553A240648B9002BED20 /* WatchlistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA705538240648B9002BED20 /* WatchlistItem.swift */; };
 		BA70553C2406F840002BED20 /* Watchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553B2406F840002BED20 /* Watchlist.swift */; };
 		BA70553D2406F840002BED20 /* Watchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553B2406F840002BED20 /* Watchlist.swift */; };
+		BA7055522407279A002BED20 /* WatchlistSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7055512407279A002BED20 /* WatchlistSearch.swift */; };
+		BA7055532407279A002BED20 /* WatchlistSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7055512407279A002BED20 /* WatchlistSearch.swift */; };
 		BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A152401E3E20064D322 /* AppDelegate.swift */; };
 		BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A172401E3E20064D322 /* SceneDelegate.swift */; };
 		BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A192401E3E20064D322 /* ContentView.swift */; };
@@ -117,6 +119,7 @@
 		BA70553524063138002BED20 /* WatchlistList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistList.swift; sourceTree = "<group>"; };
 		BA705538240648B9002BED20 /* WatchlistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistItem.swift; sourceTree = "<group>"; };
 		BA70553B2406F840002BED20 /* Watchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watchlist.swift; sourceTree = "<group>"; };
+		BA7055512407279A002BED20 /* WatchlistSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistSearch.swift; sourceTree = "<group>"; };
 		BAD00A122401E3E20064D322 /* Stocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD00A152401E3E20064D322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD00A172401E3E20064D322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -259,8 +262,8 @@
 		BA70554D24072116002BED20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BA70553B2406F840002BED20 /* Watchlist.swift */,
 				BA5B3831240227C1006EE5C7 /* AuthState.swift */,
+				BA70553B2406F840002BED20 /* Watchlist.swift */,
 				BA5B382C24021C24006EE5C7 /* StocketColors.swift */,
 				BA5B383D2402434A006EE5C7 /* User.swift */,
 				BA65851C240357D20094321E /* Portfolio.swift */,
@@ -273,6 +276,7 @@
 			children = (
 				BA70553524063138002BED20 /* WatchlistList.swift */,
 				BA705538240648B9002BED20 /* WatchlistItem.swift */,
+				BA7055512407279A002BED20 /* WatchlistSearch.swift */,
 			);
 			path = Watchlist;
 			sourceTree = "<group>";
@@ -611,6 +615,7 @@
 				BA705539240648B9002BED20 /* WatchlistItem.swift in Sources */,
 				BA5B382724021931006EE5C7 /* AppleSignInController.swift in Sources */,
 				BA5B3832240227C1006EE5C7 /* AuthState.swift in Sources */,
+				BA7055522407279A002BED20 /* WatchlistSearch.swift in Sources */,
 				BA5B382B24021BB4006EE5C7 /* LoginView.swift in Sources */,
 				BA5B383524022ACC006EE5C7 /* MainTabView.swift in Sources */,
 				BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */,
@@ -639,6 +644,7 @@
 				BA70553A240648B9002BED20 /* WatchlistItem.swift in Sources */,
 				BA5B382824021931006EE5C7 /* AppleSignInController.swift in Sources */,
 				BA5B383624022AFF006EE5C7 /* MainTabView.swift in Sources */,
+				BA7055532407279A002BED20 /* WatchlistSearch.swift in Sources */,
 				BAD00A672401EE020064D322 /* AppDelegate.swift in Sources */,
 				BA5B382424021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BA5B382E24021C38006EE5C7 /* StocketColors.swift in Sources */,

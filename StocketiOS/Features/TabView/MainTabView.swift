@@ -37,5 +37,6 @@ struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
             .environment(\.colorScheme, .dark)
+            .environmentObject(Watchlist())
     }
 }

@@ -11,9 +11,6 @@ import FirebaseFirestore
 import FirebaseAuth
 
 struct HomeView: View {
-//    @ObservedObject var user = User()
-//    @EnvironmentObject var watchlist: Watchlist
-
     var body: some View {
         ScrollView {
             VStack {
@@ -26,16 +23,12 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding()
-                WatchlistContainer()
+                WatchlistList()
                 YourStocks()
                 Spacer()
             }
             .navigationBarTitle("Portfolio", displayMode: .large)
         }
-        
-//        .onAppear {
-//            self.user.getUserData()
-//        }
     }
 }
 

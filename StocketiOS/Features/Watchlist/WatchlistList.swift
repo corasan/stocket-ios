@@ -10,8 +10,8 @@ import SwiftUI
 import Alamofire
 
 struct WatchlistList: View {
-    @State var stocks = [[String: String]]()
     @EnvironmentObject var watchlist: Watchlist
+    @State var showModal: Bool = false
 
     var body: some View {
         VStack {
@@ -22,6 +22,12 @@ struct WatchlistList: View {
                     .foregroundColor(Color("mainText"))
                     .padding(.bottom, 10)
                 Spacer()
+                Button(action: {
+                    self.showModal = true
+                }) {
+                    Text("Add")
+                        .foregroundColor(Color.blue)
+                }
             }
             
             ForEach(self.watchlist.data, id: \.self) { stock in
