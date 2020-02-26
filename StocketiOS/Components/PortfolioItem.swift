@@ -36,7 +36,7 @@ struct PortfolioItem: View {
                     
             }
         }
-        .foregroundColor(StocketColors.gray)
+        .foregroundColor(Color("mainText"))
         .padding()
     }
 }

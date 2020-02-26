@@ -24,6 +24,7 @@ struct MainTabView: View {
                     .font(.system(size: 26))
             })
         }
+        .accentColor(Color("tabAccent"))
         .background(Color("background").edgesIgnoringSafeArea(.all))
     }
 }

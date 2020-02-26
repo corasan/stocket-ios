@@ -12,14 +12,12 @@ import FirebaseFirestore
 
 struct PortfolioHome: View {
     @State var positions = [Position]()
-    @State var listener: ListenerRegistration?
 
     var body: some View {
         VStack {
             ForEach(self.positions) { pos in
                 PortfolioItem(position: pos)
             }
-            Spacer()
         }
         .onAppear {
             Portfolio.subscribe { documents in
@@ -29,7 +27,7 @@ struct PortfolioHome: View {
             }
         }
         .onDisappear {
-            self.listener?.remove()
+            Portfolio.unsubscribe()
         }
     }
 }

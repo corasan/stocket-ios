@@ -9,8 +9,31 @@
 import SwiftUI
 
 struct TradeView: View {
+    @State var search: String = ""
+
     var body: some View {
-        Text("Trade View")
+        VStack {
+            HStack {
+                TextField("Search Symbol", text: $search)
+                    .font(.system(size: 20))
+                Spacer()
+                Button(action: {
+                    print("pressed search")
+                }) {
+                    Image(systemName: "magnifyingglass")
+                        .font(.system(size: 22))
+                        .foregroundColor(StocketColors.blackLight)
+                }
+                
+            }
+            .padding()
+            .background(StocketColors.gray)
+            .cornerRadius(14)
+            
+            Spacer()
+        }
+        .padding()
+//        .background(Color.red)
     }
 }
 
