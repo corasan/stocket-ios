@@ -11,6 +11,7 @@ import FirebaseAuth
 
 struct ContentView: View {
     @ObservedObject var authState = AuthState()
+    var watchlist = Watchlist()
     var authStatehandle: AuthStateDidChangeListenerHandle?
     
     var body: some View {
@@ -18,7 +19,7 @@ struct ContentView: View {
             if !authState.isAuth {
                 LoginView()
             } else {
-                MainTabView()
+                MainTabView().environmentObject(watchlist)
             }
         }
         .onAppear {
@@ -27,6 +28,7 @@ struct ContentView: View {
         .onDisappear {
             self.authState.stopListening()
         }
+    .background(Color("background"))
     }
 }
 

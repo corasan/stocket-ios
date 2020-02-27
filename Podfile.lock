@@ -158,6 +158,7 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
+  - Alamofire (5.0.2)
   - AppCenter (3.0.0):
     - AppCenter/Analytics (= 3.0.0)
     - AppCenter/Crashes (= 3.0.0)
@@ -292,6 +293,7 @@ PODS:
   - PromisesObjC (1.2.8)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0)
   - AppCenter
   - Firebase/Analytics
   - Firebase/Auth
@@ -303,6 +305,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - abseil
+    - Alamofire
     - AppCenter
     - BoringSSL-GRPC
     - Firebase
@@ -330,6 +333,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
   AppCenter: 7a0bbe928d07467ac8b2d7f6f2a675872a6471d8
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   Firebase: 2672e5636b42f977177716317e68346ae5e9de25
@@ -355,6 +359,6 @@ SPEC CHECKSUMS:
   OneSignal: a6df91542d1cf133b9dd19d89f2b533d8f2d3163
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
 
-PODFILE CHECKSUM: e64e6884ac9f71aff263e2d3a7f71cc7c5dc9ea2
+PODFILE CHECKSUM: e60ccdce2c7020ee71d5a4f10d153246da6d6b95
 
 COCOAPODS: 1.9.0.beta.3

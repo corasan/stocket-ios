@@ -51,6 +51,11 @@ class Portfolio: ObservableObject {
     }
     
     static func unsubscribe() {
+        print("unsubscribed")
         self.portfolioListener?.remove()
+    }
+    
+    deinit {
+        print("Portfolio deallocated")
     }
 }
