@@ -26,12 +26,12 @@ struct LoginView: View {
             }
             Spacer()
         }
-//        .background(Color.black.edgesIgnoringSafeArea(.all))
+        .background(Color("background").edgesIgnoringSafeArea(.all))
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView().environment(\.colorScheme, .dark)
     }
 }

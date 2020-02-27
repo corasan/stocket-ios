@@ -13,8 +13,10 @@ struct AppleSignInController: UIViewRepresentable {
     typealias UIViewType = ASAuthorizationAppleIDButton
     var window: UIWindow = UIWindow()
     
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    
     func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
-        return ASAuthorizationAppleIDButton(type: .default, style: .white)
+        return ASAuthorizationAppleIDButton(type: .default, style: colorScheme == .light ? .black : .white)
     }
     
     func updateUIView(_ uiViewController: ASAuthorizationAppleIDButton, context: Context) { }

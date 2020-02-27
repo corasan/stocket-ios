@@ -11,6 +11,7 @@ def stocket_pods
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'FirebaseFirestoreSwift'
+  pod 'Alamofire', '~> 5.0'
 end
 
 target 'Production' do
