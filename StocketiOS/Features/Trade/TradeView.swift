@@ -33,7 +33,6 @@ struct TradeView: View {
             Spacer()
         }
         .padding()
-//        .background(Color.red)
     }
 }
 

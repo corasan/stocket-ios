@@ -13,19 +13,25 @@ import FirebaseAuth
 
 class Watchlist: ObservableObject {
     @Published var data = [[String: String]]()
+    @Published var searchResults = [[String: String]]()
     @State private var userWatchlistSymbols: [String] = [String]()
     private var watchlistListener: ListenerRegistration?
     
     private let db = Firestore.firestore().collection("Users")
-    private let api = "https://api.worldtradingdata.com/api/v1/stock"
+    private let stocksApi = "https://api.worldtradingdata.com/api/v1/stock"
     private let apiKey = "UJe0U0CAY6QcikCVX5nXPtfxOCOnxrPlUQNWeeOZYiUanAhS4lXS3Z0yJaBa"
+    private let searchApi = "https://api.worldtradingdata.com/api/v1/stock_search"
     
     func subscribe() {
         fetchUserWatchlist()
     }
     
     func unsubscribe() {
-        self.watchlistListener?.remove()
+        watchlistListener?.remove()
+    }
+    
+    func search(searchTerm: String) {
+        searchSymbolData(searchTerm: searchTerm)
     }
     
     private func fetchUserWatchlist() {
@@ -51,12 +57,29 @@ class Watchlist: ObservableObject {
     }
     
     private func fetchWatchlistData(symbols: String) {
-        AF.request("\(api)?symbol=\(symbols)&date=2019-01-02&api_token=\(apiKey)").responseJSON { response in
+        let query = "\(stocksApi)?symbol=\(symbols)"
+        AF.request("\(query)&api_token=\(apiKey)").responseJSON { response in
             switch response.result {
             case let .success(result):
                 let res = result as! [String: Any]
                 for i in res["data"] as! [[String: String]] {
                     self.data.append(i)
+                }
+            case let .failure(err):
+                print(err)
+            }
+        }
+    }
+    
+    private func searchSymbolData(searchTerm: String) {
+        let query = "\(searchApi)?search_term=\(searchTerm)&search_by=symbol,name&currency=USD"
+        AF.request("\(query)&api_token=\(apiKey)").responseJSON { response in
+            switch response.result {
+            case let .success(result):
+                let res = result as! [String: Any]
+                print(res)
+                for i in res["data"] as! [[String: String]] {
+                    self.searchResults.append(i)
                 }
             case let .failure(err):
                 print(err)
