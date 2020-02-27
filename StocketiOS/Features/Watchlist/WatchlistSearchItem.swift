@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct WatchlistSearchItem: View {
+    @EnvironmentObject var watchlist: Watchlist
     var name: String
     var symbol: String
     var price: String
@@ -23,7 +24,7 @@ struct WatchlistSearchItem: View {
     
     var body: some View {
         Button(action: {
-            print("pressed")
+            self.watchlist.addToWatchlist(symbol: self.symbol)
         }) {
             VStack {
                 HStack {

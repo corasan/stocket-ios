@@ -34,19 +34,25 @@ class Watchlist: ObservableObject {
         searchSymbolData(searchTerm: searchTerm)
     }
     
+    func addToWatchlist(symbol: String) {
+        addToUserWatchlist(symbol: symbol)
+    }
+    
     private func fetchUserWatchlist() {
         let user = Auth.auth().currentUser
         if let user = user {
             let ref = db.document(user.uid).collection("watchlist")
             self.watchlistListener = ref.addSnapshotListener { snapshot, err in
-                guard let documents = snapshot?.documents else {
+                guard let snap = snapshot else {
                     print("Error fetching watchlist \(err?.localizedDescription ?? "Unknown Error")")
                     return
                 }
-                
+
                 var symbols = [String]()
-                for i in documents {
-                    symbols.append(i.get("symbol") as! String)
+                snap.documentChanges.forEach { diff in
+                    if (diff.type == .added) {
+                        symbols.append(diff.document.get("symbol") as! String)
+                    }
                 }
                 
                 if symbols.count > 0 {
@@ -77,12 +83,22 @@ class Watchlist: ObservableObject {
             switch response.result {
             case let .success(result):
                 let res = result as! [String: Any]
-                print(res)
                 for i in res["data"] as! [[String: String]] {
                     self.searchResults.append(i)
                 }
             case let .failure(err):
                 print(err)
+            }
+        }
+    }
+    
+    private func addToUserWatchlist(symbol: String) {
+        if let user = Auth.auth().currentUser {
+            let ref = db.document(user.uid).collection("watchlist")
+            ref.addDocument(data: ["symbol": symbol]) { err in
+                if let err = err {
+                    print("Error adding document: \(err)")
+                }
             }
         }
     }
