@@ -35,6 +35,7 @@ struct WatchlistList: View {
             }
         }
         .padding()
+        .sheet(isPresented: $showModal, content: { WatchlistSearch().environmentObject(self.watchlist) })
     }
 }
 
