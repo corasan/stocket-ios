@@ -47,6 +47,8 @@
 		BA70553D2406F840002BED20 /* Watchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA70553B2406F840002BED20 /* Watchlist.swift */; };
 		BA7055522407279A002BED20 /* WatchlistSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7055512407279A002BED20 /* WatchlistSearch.swift */; };
 		BA7055532407279A002BED20 /* WatchlistSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7055512407279A002BED20 /* WatchlistSearch.swift */; };
+		BA7055552407412F002BED20 /* WatchlistSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7055542407412F002BED20 /* WatchlistSearchItem.swift */; };
+		BA7055562407412F002BED20 /* WatchlistSearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7055542407412F002BED20 /* WatchlistSearchItem.swift */; };
 		BAD00A162401E3E20064D322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A152401E3E20064D322 /* AppDelegate.swift */; };
 		BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A172401E3E20064D322 /* SceneDelegate.swift */; };
 		BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD00A192401E3E20064D322 /* ContentView.swift */; };
@@ -120,6 +122,7 @@
 		BA705538240648B9002BED20 /* WatchlistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistItem.swift; sourceTree = "<group>"; };
 		BA70553B2406F840002BED20 /* Watchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watchlist.swift; sourceTree = "<group>"; };
 		BA7055512407279A002BED20 /* WatchlistSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistSearch.swift; sourceTree = "<group>"; };
+		BA7055542407412F002BED20 /* WatchlistSearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistSearchItem.swift; sourceTree = "<group>"; };
 		BAD00A122401E3E20064D322 /* Stocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD00A152401E3E20064D322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD00A172401E3E20064D322 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -277,6 +280,7 @@
 				BA70553524063138002BED20 /* WatchlistList.swift */,
 				BA705538240648B9002BED20 /* WatchlistItem.swift */,
 				BA7055512407279A002BED20 /* WatchlistSearch.swift */,
+				BA7055542407412F002BED20 /* WatchlistSearchItem.swift */,
 			);
 			path = Watchlist;
 			sourceTree = "<group>";
@@ -626,6 +630,7 @@
 				BA6585202404718B0094321E /* PortfolioHome.swift in Sources */,
 				BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */,
+				BA7055552407412F002BED20 /* WatchlistSearchItem.swift in Sources */,
 				BA70553624063138002BED20 /* WatchlistList.swift in Sources */,
 				BA5B38422403075B006EE5C7 /* PortfolioItem.swift in Sources */,
 				BA5B383E2402434A006EE5C7 /* User.swift in Sources */,
@@ -655,6 +660,7 @@
 				BA6585212404718B0094321E /* PortfolioHome.swift in Sources */,
 				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
 				BA5B383324022A2E006EE5C7 /* AuthState.swift in Sources */,
+				BA7055562407412F002BED20 /* WatchlistSearchItem.swift in Sources */,
 				BA70553724063138002BED20 /* WatchlistList.swift in Sources */,
 				BA5B38432403075B006EE5C7 /* PortfolioItem.swift in Sources */,
 				BA5B383F2402434A006EE5C7 /* User.swift in Sources */,

@@ -40,6 +40,12 @@ struct WatchlistSearch: View {
                         .font(.system(size: 15))
                 }
             }
+            
+            if self.watchlist.searchResults.count > 0 {
+                ForEach(self.watchlist.searchResults, id: \.self) { item in
+                    WatchlistSearchItem(name: item["name"]!, symbol: item["symbol"]!, price: item["price"]!, stockExchange: item["stock_exchange_short"]!)
+                }
+            }
             Spacer()
         }
         .padding()
