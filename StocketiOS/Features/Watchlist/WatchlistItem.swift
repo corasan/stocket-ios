@@ -39,7 +39,7 @@ struct WatchlistItem: View {
                     .foregroundColor(Color("subText"))
                     .padding(.top, 5)
                 Spacer()
-                Text("\(Double(self.gains)! > 0 ? "+" : "-")\(self.gains)") // (\(self.changePct)%)
+                Text("\(Double(self.gains)! > 0 ? "+" : "")\(self.gains)") // (\(self.changePct)%)
                     .foregroundColor(Double(self.gains)! > 0 ? Color("green") : Color("red"))
                     .padding(.top, 5)
                     
