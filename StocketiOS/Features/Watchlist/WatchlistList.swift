@@ -22,12 +22,6 @@ struct WatchlistList: View {
                     .foregroundColor(Color("mainText"))
                     .padding(.bottom, 10)
                 Spacer()
-                Button(action: {
-                    self.showModal = true
-                }) {
-                    Text("Add")
-                        .foregroundColor(Color.blue)
-                }
             }
             
             ForEach(self.watchlist.data, id: \.self) { stock in

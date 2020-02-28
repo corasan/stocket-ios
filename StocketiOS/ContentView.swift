@@ -28,12 +28,12 @@ struct ContentView: View {
         .onDisappear {
             self.authState.stopListening()
         }
-    .background(Color("background"))
+        .background(Color("background").edgesIgnoringSafeArea(.all))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environment(\.colorScheme, .dark)
     }
 }

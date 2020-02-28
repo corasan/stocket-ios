@@ -25,7 +25,6 @@ class Watchlist: ObservableObject {
         .debounce(for: 0.5, scheduler: DispatchQueue.main)
         .removeDuplicates()
         .sink { searchText in
-            print("im hereeee")
             self.search(searchTerm: searchText)
         }
     }
