@@ -1,0 +1,21 @@
+//
+//  StockView.swift
+//  StocketiOS
+//
+//  Created by Henry Paulino on 3/1/20.
+//  Copyright © 2020 Henry Paulino. All rights reserved.
+//
+
+import SwiftUI
+
+struct StockView: View {
+    var body: some View {
+        Text("Hello, World! From StockView")
+    }
+}
+
+struct StockView_Previews: PreviewProvider {
+    static var previews: some View {
+        StockView()
+    }
+}
