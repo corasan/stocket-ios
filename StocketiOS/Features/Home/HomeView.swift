@@ -17,8 +17,22 @@ struct HomeView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Balance")
+                            .font(.system(size: 25))
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color("mainText"))
                         Text("$1,000")
-                            .font(.title)
+                            .font(.system(size: 25))
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color("mainText"))
+
+                        
+                        HStack {
+                            Image(systemName: "arrow.up.right")
+                                .font(.system(size: 14, weight: .bold))
+                            Text("$18.98 (8.57%)")
+                                .font(.system(size: 13, weight: .bold))
+                        }
+                        .foregroundColor(Color("green"))
                     }
                     Spacer()
                 }
@@ -28,12 +42,13 @@ struct HomeView: View {
                 Spacer()
             }
             .navigationBarTitle("Portfolio", displayMode: .large)
+            .background(Color("background"))
         }
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView()
+//    }
+//}

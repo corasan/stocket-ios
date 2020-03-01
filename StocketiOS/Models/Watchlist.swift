@@ -10,12 +10,24 @@ import SwiftUI
 import Alamofire
 import FirebaseFirestore
 import FirebaseAuth
+import Combine
 
 class Watchlist: ObservableObject {
     @Published var data = [[String: String]]()
     @Published var searchResults = [[String: String]]()
+    @Published var search = ""
     @State private var userWatchlistSymbols: [String] = [String]()
     private var watchlistListener: ListenerRegistration?
+    private var cancellable: AnyCancellable? = nil
+    
+    init() {
+       cancellable = $search
+        .debounce(for: 0.5, scheduler: DispatchQueue.main)
+        .removeDuplicates()
+        .sink { searchText in
+            self.search(searchTerm: searchText)
+        }
+    }
     
     private let db = Firestore.firestore().collection("Users")
     private let stocksApi = "https://api.worldtradingdata.com/api/v1/stock"
@@ -31,7 +43,11 @@ class Watchlist: ObservableObject {
     }
     
     func search(searchTerm: String) {
-        searchSymbolData(searchTerm: searchTerm)
+        if (searchTerm.count > 0) {
+            searchSymbolData(searchTerm: searchTerm)
+        } else {
+            self.searchResults = []
+        }
     }
     
     func addToWatchlist(symbol: String) {
@@ -83,6 +99,7 @@ class Watchlist: ObservableObject {
             switch response.result {
             case let .success(result):
                 let res = result as! [String: Any]
+                self.searchResults = []
                 for i in res["data"] as! [[String: String]] {
                     self.searchResults.append(i)
                 }
