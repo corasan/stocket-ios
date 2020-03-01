@@ -10,7 +10,9 @@ import SwiftUI
 
 struct StockView: View {
     var body: some View {
-        Text("Hello, World! From StockView")
+        VStack {
+            Text("Hello, World! From StockView")
+        }
     }
 }
 
