@@ -12,6 +12,7 @@ struct StockView: View {
     var body: some View {
         VStack {
             Text("Hello, World! From StockView")
+            Text("Test if signed commits work")
         }
     }
 }
