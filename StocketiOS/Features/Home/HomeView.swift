@@ -42,6 +42,7 @@ struct HomeView: View {
                 Spacer()
             }
             .navigationBarTitle("Portfolio", displayMode: .large)
+            .background(Color("background"))
         }
     }
 }
