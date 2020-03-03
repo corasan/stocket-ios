@@ -11,6 +11,8 @@
 		A1736E0E6D46245D9F51B69B /* Pods_Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B981FC450D6090E967B19FE /* Pods_Production.framework */; };
 		BA26901E240C6D1D00799E30 /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA26901D240C6D1D00799E30 /* StockView.swift */; };
 		BA26901F240C6D1D00799E30 /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA26901D240C6D1D00799E30 /* StockView.swift */; };
+		BA269021240E0B5800799E30 /* StatsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA269020240E0B5800799E30 /* StatsItem.swift */; };
+		BA269022240E0B5800799E30 /* StatsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA269020240E0B5800799E30 /* StatsItem.swift */; };
 		BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */; };
 		BA5B382424021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */; };
 		BA5B382524021931006EE5C7 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382124021931006EE5C7 /* AppleSignIn.swift */; };
@@ -110,6 +112,7 @@
 		94FB3E6D364E2BF07C512A72 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		ABBE32EF03D4388040F73217 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA26901D240C6D1D00799E30 /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		BA269020240E0B5800799E30 /* StatsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItem.swift; sourceTree = "<group>"; };
 		BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInCoordinator.swift; sourceTree = "<group>"; };
 		BA5B382124021931006EE5C7 /* AppleSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
 		BA5B382224021931006EE5C7 /* AppleSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInController.swift; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				BA26901D240C6D1D00799E30 /* StockView.swift */,
+				BA269020240E0B5800799E30 /* StatsItem.swift */,
 			);
 			path = Stock;
 			sourceTree = "<group>";
@@ -657,6 +661,7 @@
 				BA7055332405F11D002BED20 /* YourStocks.swift in Sources */,
 				BA5B383B24023D44006EE5C7 /* HomeView.swift in Sources */,
 				BA6585202404718B0094321E /* PortfolioHome.swift in Sources */,
+				BA269021240E0B5800799E30 /* StatsItem.swift in Sources */,
 				BA70555C240889C6002BED20 /* SearchListItem.swift in Sources */,
 				BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */,
@@ -690,6 +695,7 @@
 				BA7055342405F11D002BED20 /* YourStocks.swift in Sources */,
 				BA5B383C24023D44006EE5C7 /* HomeView.swift in Sources */,
 				BA6585212404718B0094321E /* PortfolioHome.swift in Sources */,
+				BA269022240E0B5800799E30 /* StatsItem.swift in Sources */,
 				BA70555D240889C7002BED20 /* SearchListItem.swift in Sources */,
 				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
 				BA5B383324022A2E006EE5C7 /* AuthState.swift in Sources */,

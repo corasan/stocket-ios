@@ -12,37 +12,40 @@ import FirebaseAuth
 
 struct HomeView: View {
     var body: some View {
-        ScrollView {
-            VStack {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Balance")
-                            .font(.system(size: 25))
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color("mainText"))
-                        Text("$1,000")
-                            .font(.system(size: 25))
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color("mainText"))
+        NavigationView {
+            ScrollView {
+                VStack {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Balance")
+                                .font(.system(size: 25))
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color("mainText"))
+                            Text("$1,000")
+                                .font(.system(size: 25))
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color("mainText"))
 
-                        
-                        HStack {
-                            Image(systemName: "arrow.up.right")
-                                .font(.system(size: 14, weight: .bold))
-                            Text("$18.98 (8.57%)")
-                                .font(.system(size: 13, weight: .bold))
+                            
+                            HStack {
+                                Image(systemName: "arrow.up.right")
+                                    .font(.system(size: 14, weight: .bold))
+                                Text("$18.98 (8.57%)")
+                                    .font(.system(size: 13, weight: .bold))
+                            }
+                            .foregroundColor(Color("green"))
                         }
-                        .foregroundColor(Color("green"))
+                        Spacer()
                     }
+                    .padding()
+                    WatchlistList()
+                    YourStocks()
                     Spacer()
                 }
-                .padding()
-                WatchlistList()
-                YourStocks()
-                Spacer()
+                .background(Color("background"))
             }
-            .navigationBarTitle("Portfolio", displayMode: .large)
-            .background(Color("background"))
+            .navigationBarTitle(Text(""), displayMode: .inline)
+            .navigationBarHidden(true)
         }
     }
 }
