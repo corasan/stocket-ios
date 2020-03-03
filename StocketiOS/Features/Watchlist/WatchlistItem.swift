@@ -24,29 +24,31 @@ struct WatchlistItem: View {
     }
     
     var body: some View {
-        VStack {
-            HStack {
-                Text(self.symbol)
-                    .font(.system(size: 15))
-                    .fontWeight(.bold)
-                Spacer()
-                Text("\(self.price)")
-                    .font(.system(size: 15))
-                    .fontWeight(.bold)
+        NavigationLink(destination: StockView(symbol: self.symbol)) {
+            VStack {
+                HStack {
+                    Text(self.symbol)
+                        .font(.system(size: 15))
+                        .fontWeight(.bold)
+                    Spacer()
+                    Text("\(self.price)")
+                        .font(.system(size: 15))
+                        .fontWeight(.bold)
+                }
+                HStack {
+                    Text(self.name)
+                        .foregroundColor(Color("subText"))
+                        .padding(.top, 5)
+                    Spacer()
+                    Text("\(Double(self.gains)! > 0 ? "+" : "")\(self.gains)") // (\(self.changePct)%)
+                        .foregroundColor(Double(self.gains)! > 0 ? Color("green") : Color("red"))
+                        .padding(.top, 5)
+                        
+                }
             }
-            HStack {
-                Text(self.name)
-                    .foregroundColor(Color("subText"))
-                    .padding(.top, 5)
-                Spacer()
-                Text("\(Double(self.gains)! > 0 ? "+" : "")\(self.gains)") // (\(self.changePct)%)
-                    .foregroundColor(Double(self.gains)! > 0 ? Color("green") : Color("red"))
-                    .padding(.top, 5)
-                    
-            }
+            .foregroundColor(Color("mainText"))
+            .padding([.top, .bottom], 10)
         }
-        .foregroundColor(Color("mainText"))
-        .padding([.top, .bottom], 10)
     }
 }
 

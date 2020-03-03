@@ -14,6 +14,13 @@ struct ContentView: View {
     var watchlist = Watchlist()
     var authStatehandle: AuthStateDidChangeListenerHandle?
     
+    init() {
+        UINavigationBar.appearance().backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+    }
+    
     var body: some View {
         Group {
             if !authState.isAuth {
