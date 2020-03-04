@@ -10,24 +10,27 @@ import SwiftUI
 
 struct StatsItem: View {
     var label: String
+    var value: String
     
-    init(label: String = "Label") {
+    init(label: String = "Label", value: String = "10.9") {
         self.label = label
+        self.value = value
     }
     
     var body: some View {
         VStack {
             HStack {
                 Text(self.label.uppercased())
-                    .font(.system(size: 13, design: .rounded))
+                    .font(.system(size: 12, design: .rounded))
                     .foregroundColor(Color("subText"))
                 Spacer()
-                Text("14.90")
-                    .font(.system(size: 14, design: .rounded))
+                Text(self.value)
+                    .font(.system(size: 12, design: .rounded))
                     .foregroundColor(Color("mainText"))
             }
             Divider()
         }
+        .padding(.top, 4)
     }
 }
 
