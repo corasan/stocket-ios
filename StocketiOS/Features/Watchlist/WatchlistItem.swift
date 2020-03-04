@@ -14,17 +14,19 @@ struct WatchlistItem: View {
     var name: String
     var gains: String
     var changePct: String
+    var data: [String: String]
     
-    init(symbol: String, price: String, name: String, gains: String, changePct: String) {
-        self.symbol = symbol
-        self.price = price
-        self.name = name
-        self.gains = gains
-        self.changePct = changePct
+    init(data: [String: String]) {
+        self.data = data
+        self.symbol = data["symbol"]!
+        self.price = data["price"]!
+        self.name = data["name"]!
+        self.gains = data["day_change"]!
+        self.changePct = data["change_pct"]!
     }
     
     var body: some View {
-        NavigationLink(destination: StockView(symbol: self.symbol)) {
+        NavigationLink(destination: StockView(data: self.data)) {
             VStack {
                 HStack {
                     Text(self.symbol)
@@ -53,15 +55,16 @@ struct WatchlistItem: View {
 }
 
 struct WatchlistItem_Previews: PreviewProvider {
-    static var pos = Position(
-        id: "abc",
-        gains: "10.00",
-        gainsPercentage: "3.00",
-        symbol: "AAPL",
-        value: "298.87"
-    )
+    static var data = [
+        "id": "abc",
+        "day_change": "10.00",
+        "change_pct": "3.00",
+        "symbol": "AAPL",
+        "price": "298.87",
+        "name": "Apple Inc."
+    ]
 
     static var previews: some View {
-        PortfolioItem(position: pos)
+        WatchlistItem(data: data)
     }
 }
