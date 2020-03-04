@@ -25,7 +25,7 @@ struct WatchlistList: View {
             }
             
             ForEach(self.watchlist.data, id: \.self) { stock in
-                WatchlistItem(symbol: stock["symbol"]!, price: stock["price"]!, name: stock["name"]!, gains: stock["day_change"]!, changePct: stock["change_pct"]!)
+                WatchlistItem(data: stock)
             }
         }
         .padding()
