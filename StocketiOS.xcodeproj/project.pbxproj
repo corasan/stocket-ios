@@ -21,6 +21,10 @@
 		BA269038240F714C00799E30 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA269036240F714C00799E30 /* Stock.swift */; };
 		BA26903B240F7BF000799E30 /* ShortNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA26903A240F7BF000799E30 /* ShortNumberExtension.swift */; };
 		BA26903C240F7BF000799E30 /* ShortNumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA26903A240F7BF000799E30 /* ShortNumberExtension.swift */; };
+		BA26903E24105C9E00799E30 /* TradeOpenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA26903D24105C9E00799E30 /* TradeOpenButton.swift */; };
+		BA26903F24105C9E00799E30 /* TradeOpenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA26903D24105C9E00799E30 /* TradeOpenButton.swift */; };
+		BA2690412410B23100799E30 /* TabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2690402410B23100799E30 /* TabBarExtension.swift */; };
+		BA2690422410B23100799E30 /* TabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2690402410B23100799E30 /* TabBarExtension.swift */; };
 		BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */; };
 		BA5B382424021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */; };
 		BA5B382524021931006EE5C7 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382124021931006EE5C7 /* AppleSignIn.swift */; };
@@ -124,6 +128,8 @@
 		BA269029240EE69000799E30 /* LineGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
 		BA269036240F714C00799E30 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		BA26903A240F7BF000799E30 /* ShortNumberExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortNumberExtension.swift; sourceTree = "<group>"; };
+		BA26903D24105C9E00799E30 /* TradeOpenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeOpenButton.swift; sourceTree = "<group>"; };
+		BA2690402410B23100799E30 /* TabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarExtension.swift; sourceTree = "<group>"; };
 		BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInCoordinator.swift; sourceTree = "<group>"; };
 		BA5B382124021931006EE5C7 /* AppleSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
 		BA5B382224021931006EE5C7 /* AppleSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInController.swift; sourceTree = "<group>"; };
@@ -294,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				BA658523240493440094321E /* TradeView.swift */,
+				BA26903D24105C9E00799E30 /* TradeOpenButton.swift */,
 			);
 			path = Trade;
 			sourceTree = "<group>";
@@ -311,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				BA5B383424022ACC006EE5C7 /* MainTabView.swift */,
+				BA2690402410B23100799E30 /* TabBarExtension.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -705,6 +713,7 @@
 				BA5B383B24023D44006EE5C7 /* HomeView.swift in Sources */,
 				BA6585202404718B0094321E /* PortfolioHome.swift in Sources */,
 				BA269021240E0B5800799E30 /* StatsItem.swift in Sources */,
+				BA26903E24105C9E00799E30 /* TradeOpenButton.swift in Sources */,
 				BA70555C240889C6002BED20 /* SearchListItem.swift in Sources */,
 				BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */,
@@ -713,6 +722,7 @@
 				BA70553624063138002BED20 /* WatchlistList.swift in Sources */,
 				BA5B38422403075B006EE5C7 /* PortfolioItem.swift in Sources */,
 				BA5B383E2402434A006EE5C7 /* User.swift in Sources */,
+				BA2690412410B23100799E30 /* TabBarExtension.swift in Sources */,
 				BA5B382F24021E15006EE5C7 /* StocketColors.swift in Sources */,
 				BAD00A1A2401E3E20064D322 /* ContentView.swift in Sources */,
 				BA65851D240357D20094321E /* Portfolio.swift in Sources */,
@@ -742,6 +752,7 @@
 				BA5B383C24023D44006EE5C7 /* HomeView.swift in Sources */,
 				BA6585212404718B0094321E /* PortfolioHome.swift in Sources */,
 				BA269022240E0B5800799E30 /* StatsItem.swift in Sources */,
+				BA26903F24105C9E00799E30 /* TradeOpenButton.swift in Sources */,
 				BA70555D240889C7002BED20 /* SearchListItem.swift in Sources */,
 				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
 				BA5B383324022A2E006EE5C7 /* AuthState.swift in Sources */,
@@ -750,6 +761,7 @@
 				BA70553724063138002BED20 /* WatchlistList.swift in Sources */,
 				BA5B38432403075B006EE5C7 /* PortfolioItem.swift in Sources */,
 				BA5B383F2402434A006EE5C7 /* User.swift in Sources */,
+				BA2690422410B23100799E30 /* TabBarExtension.swift in Sources */,
 				BAD00A692401EE020064D322 /* ContentView.swift in Sources */,
 				BA5B383724022B07006EE5C7 /* LoginView.swift in Sources */,
 				BA65851E240357D20094321E /* Portfolio.swift in Sources */,

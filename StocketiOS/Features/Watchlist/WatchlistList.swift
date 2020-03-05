@@ -24,8 +24,8 @@ struct WatchlistList: View {
                 Spacer()
             }
             
-            ForEach(self.watchlist.data, id: \.self) { stock in
-                WatchlistItem(data: stock)
+            ForEach(self.watchlist.data, id: \.self) { el in
+                WatchlistItem(data: el)
             }
         }
         .padding()

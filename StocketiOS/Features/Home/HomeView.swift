@@ -42,10 +42,11 @@ struct HomeView: View {
                     YourStocks()
                     Spacer()
                 }
-                .background(Color("background"))
+                Spacer()
             }
             .navigationBarTitle(Text(""), displayMode: .inline)
             .navigationBarHidden(true)
+            .background(Color("background"))
         }
     }
 }

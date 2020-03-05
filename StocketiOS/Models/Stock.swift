@@ -8,6 +8,11 @@
 
 import Foundation
 
-class Stock {
+class Stock: ObservableObject {
     var data = [[String: String]]()
+    @Published var selectedStock = [String: String]()
+    
+    func selectStock(_ data: [String: String]) {
+        self.selectedStock = data
+    }
 }

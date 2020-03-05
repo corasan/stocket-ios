@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct WatchlistItem: View {
+    @EnvironmentObject var stock: Stock
+
     var symbol: String
     var price: String
     var name: String
@@ -26,7 +28,7 @@ struct WatchlistItem: View {
     }
     
     var body: some View {
-        NavigationLink(destination: StockView(data: self.data)) {
+        NavigationLink(destination: StockView()) {
             VStack {
                 HStack {
                     Text(self.symbol)
@@ -45,12 +47,14 @@ struct WatchlistItem: View {
                     Text("\(Double(self.gains)! > 0 ? "+" : "")\(self.gains)") // (\(self.changePct)%)
                         .foregroundColor(Double(self.gains)! > 0 ? Color("green") : Color("red"))
                         .padding(.top, 5)
-                        
                 }
             }
             .foregroundColor(Color("mainText"))
             .padding([.top, .bottom], 10)
         }
+        .simultaneousGesture(TapGesture().onEnded {
+            self.stock.selectStock(self.data)
+        })
     }
 }
 
