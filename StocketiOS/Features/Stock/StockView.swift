@@ -23,27 +23,7 @@ struct StockView: View {
                 }
                 
                 VStack(alignment: .leading) {
-                    Text("Stats")
-                        .font(.system(size: 20, weight: .heavy))
-                        .padding(.bottom, 20)
-                    HStack {
-                        VStack {
-                            StatsItem(label: "open", value: self.stock.selectedStock["price_open"]!)
-                            StatsItem(label: "high", value: self.stock.selectedStock["day_high"]!)
-                            StatsItem(label: "low", value: self.stock.selectedStock["day_low"]!)
-                            StatsItem(label: "52 WK high", value: self.stock.selectedStock["52_week_high"]!)
-                            StatsItem(label: "52 WK low", value: self.stock.selectedStock["52_week_low"]!)
-                        }
-                        .padding(.trailing, 5)
-                        VStack {
-                            StatsItem(label: "vol", value: Int(self.stock.selectedStock["volume"]!)!.formatUsingAbbrevation())
-                            StatsItem(label: "avg vol", value: Int(self.stock.selectedStock["volume_avg"]!)!.formatUsingAbbrevation())
-                            StatsItem(label: "eps", value: self.stock.selectedStock["eps"]!)
-                            StatsItem(label: "shares", value: Int(self.stock.selectedStock["shares"]!)!.formatUsingAbbrevation())
-                            StatsItem(label: "mkt cap", value: Int(self.stock.selectedStock["market_cap"]!)!.formatUsingAbbrevation())
-                        }
-                        .padding(.leading, 5)
-                    }
+                    StockStats(data: self.stock.selectedStock)
                 }
                 Spacer()
             }
@@ -51,11 +31,34 @@ struct StockView: View {
             
             TradeOpenButton()
         }
+        .background(Color("background"))
     }
 }
 
 struct StockView_Previews: PreviewProvider {
+    static var stock = Stock()
+
+    static func getData() -> Stock {
+        let data = [
+            "name": "Snap Inc.",
+            "symbol": "SNAP",
+            "price": "14.39",
+            "price_open": "14.35",
+            "day_high": "14.53",
+            "day_low": "13.75",
+            "52_week_high": "19.76",
+            "52_week_low": "9.16",
+            "market_cap": "20436533248",
+            "volume": "27084322",
+            "volume_avg": "25158083",
+            "shares": "1160130048",
+            "eps": "-0.75"
+        ]
+        self.stock.selectStock(data)
+        return self.stock
+    }
+
     static var previews: some View {
-        StockView()
+        StockView().environmentObject(getData())
     }
 }
