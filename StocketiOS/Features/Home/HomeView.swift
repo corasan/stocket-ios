@@ -18,13 +18,14 @@ struct HomeView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text("Balance")
-                                .font(.system(size: 25))
-                                .fontWeight(.heavy)
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
                                 .foregroundColor(Color("mainText"))
                             Text("$1,000")
-                                .font(.system(size: 25))
-                                .fontWeight(.heavy)
+                                .font(.system(size: 26))
+                                .fontWeight(.black)
                                 .foregroundColor(Color("mainText"))
+                                .padding(.top, 8)
 
                             
                             HStack {
@@ -34,6 +35,7 @@ struct HomeView: View {
                                     .font(.system(size: 13, weight: .bold))
                             }
                             .foregroundColor(Color("green"))
+                            .padding(.top, -3)
                         }
                         Spacer()
                     }
