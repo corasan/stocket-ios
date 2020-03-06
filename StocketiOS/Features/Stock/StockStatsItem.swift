@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct StatsItem: View {
+struct StockStatsItem: View {
     var label: String
     var value: String
     
@@ -20,22 +20,21 @@ struct StatsItem: View {
     var body: some View {
         VStack {
             HStack {
-                Text(self.label.uppercased())
-                    .font(.system(size: 12, design: .rounded))
+                Text(self.label.capitalized)
+                    .font(.system(size: 11, design: .rounded))
                     .foregroundColor(Color("subText"))
                 Spacer()
                 Text(self.value)
-                    .font(.system(size: 12, design: .rounded))
+                    .font(.system(size: 11, design: .rounded))
                     .foregroundColor(Color("mainText"))
             }
-            Divider()
         }
-        .padding(.top, 4)
+        .padding([.top, .bottom], 3)
     }
 }
 
-struct StatsItem_Previews: PreviewProvider {
+struct StockStatsItem_Previews: PreviewProvider {
     static var previews: some View {
-        StatsItem()
+        StockStatsItem()
     }
 }
