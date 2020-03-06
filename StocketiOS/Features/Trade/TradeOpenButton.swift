@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct TradeOpenButton: View {
+    @EnvironmentObject var trade: Trade
+
     var body: some View {
         VStack {
             Spacer()
@@ -23,7 +25,7 @@ struct TradeOpenButton: View {
                 }
                 Spacer()
                 Button(action: {
-                    
+                    self.trade.toggleModal(true)
                 }) {
                     Text("Trade")
                         .font(.system(size: 13, weight: .medium))
@@ -37,12 +39,15 @@ struct TradeOpenButton: View {
             .padding([.top, .bottom], 10)
             .padding([.leading, .trailing], 10)
             .background(Color("background"))
+            .sheet(isPresented: $trade.showModal) {
+                Text("trade")
+            }
         }
     }
 }
 
 struct TradeOpenButton_Previews: PreviewProvider {
     static var previews: some View {
-        TradeOpenButton()
+        TradeOpenButton().environmentObject(Trade())
     }
 }

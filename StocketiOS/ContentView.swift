@@ -13,6 +13,7 @@ struct ContentView: View {
     @ObservedObject var authState = AuthState()
     var watchlist = Watchlist()
     var stock = Stock()
+    var trade = Trade()
     var authStatehandle: AuthStateDidChangeListenerHandle?
     
     init() {
@@ -30,6 +31,7 @@ struct ContentView: View {
                 MainTabView()
                     .environmentObject(watchlist)
                     .environmentObject(stock)
+                    .environmentObject(trade)
             }
         }
         .onAppear {
