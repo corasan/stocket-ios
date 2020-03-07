@@ -56,7 +56,6 @@ struct StockView_Previews: PreviewProvider {
             "eps": "-0.75"
         ]
         self.stock.selectStock(data)
-//        self.stock.selectedStock = data
         return self.stock
     }
 
