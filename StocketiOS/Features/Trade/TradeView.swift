@@ -27,13 +27,14 @@ struct TradeField: View {
                 Text(value)
                     .font(.system(size: 20, weight: .black))
             }
-            Divider()
+            Divider().frame(height: 0.8)
         }
     }
 }
 
 struct TradeView: View {
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var trade: Trade
 
     var body: some View {
         VStack {
@@ -55,7 +56,7 @@ struct TradeView: View {
             VStack {
                 Group {
                     TradeField(label: "Price", value: "$186.97")
-                    TradeField(label: "Shares", value: "0")
+                    TradeField(label: "Shares", value: self.trade.shares.count == 0 ? "0" : self.trade.shares.joined(separator: ""))
                 }
                 .padding(.top, 30)
                 Spacer()
@@ -82,6 +83,6 @@ struct TradeView: View {
 
 struct TradeView_Previews: PreviewProvider {
     static var previews: some View {
-        TradeView()
+        TradeView().environmentObject(Trade())
     }
 }

@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct NumPadView: View {
+    @EnvironmentObject var trade: Trade
+
     var body: some View {
         GeometryReader { g in
             VStack(alignment: .trailing, spacing: 25) {
@@ -16,7 +18,11 @@ struct NumPadView: View {
                     HStack {
                         ForEach(padRow.row) { padKey in
                             Button(action: {
-                                print(padKey.value)
+                                if (padKey.value == "delete.left") {
+                                    self.trade.shares.removeLast()
+                                } else {
+                                    self.trade.shares.append(padKey.value)
+                                }
                             }) {
                                 if padKey.value == "delete.left" {
                                     Image(systemName: padKey.value)
@@ -56,6 +62,7 @@ struct PadKey: Identifiable {
 
 #if DEBUG
 struct NumPadView_Previews: PreviewProvider {
+    @State static var number: [String] = []
     static var previews: some View {
         NumPadView()
     }
