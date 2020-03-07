@@ -38,14 +38,14 @@ struct TradeOpenButton: View {
                     Text("Trade")
                         .font(.system(size: 16, weight: .black))
                         .foregroundColor(Color("darkGreen"))
-                        .padding([.top, .bottom], 8)
-                        .padding([.leading, .trailing], 40)
+                        .padding(.vertical, 10)
+                        .padding(.horizontal, 40)
                         .background(Color("green"))
-                        .cornerRadius(16.0)
+                        .cornerRadius(20.0)
                 }
             }
-            .padding([.top, .bottom], 10)
-            .padding([.leading, .trailing], 10)
+            .padding(.vertical, 10)
+            .padding(.horizontal, 10)
             .background(Color("background"))
             .sheet(isPresented: $trade.showModal) {
                 TradeView()
