@@ -22,19 +22,20 @@ struct StockView: View {
                     LineGraph(name: self.stock.selectedStock["name"]!, symbol: self.stock.selectedStock["symbol"]!)
                 }
                 
-                VStack(alignment: .leading) {
-                    StockStats(data: self.stock.selectedStock)
-                }
+//                VStack(alignment: .leading) {
+//                    StockStats(data: self.stock.selectedStock)
+//                }
                 Spacer()
             }
             .padding(.all, 20)
             
-            TradeOpenButton()
+            TradeOpenButton(symbol: self.stock.selectedStock["symbol"]!, price: self.stock.selectedStock["price"]!)
         }
         .background(Color("background"))
     }
 }
 
+#if DEBUG
 struct StockView_Previews: PreviewProvider {
     static var stock = Stock()
 
@@ -55,10 +56,12 @@ struct StockView_Previews: PreviewProvider {
             "eps": "-0.75"
         ]
         self.stock.selectStock(data)
+//        self.stock.selectedStock = data
         return self.stock
     }
 
     static var previews: some View {
-        StockView().environmentObject(getData())
+        StockView().environmentObject(getData()).environmentObject(Trade())
     }
 }
+#endif

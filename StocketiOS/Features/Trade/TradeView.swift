@@ -8,31 +8,73 @@
 
 import SwiftUI
 
-struct TradeView: View {
-    @State var search: String = ""
+struct TradeField: View {
+    var label: String
+    var value: String
+    
+    init(label: String, value: String) {
+        self.label = label
+        self.value = value
+    }
 
     var body: some View {
         VStack {
             HStack {
-                TextField("Search Symbol", text: $search)
-                    .font(.system(size: 20))
+                Text(label)
+                    .font(.system(size: 18, weight: .medium))
+                    .foregroundColor(Color("subText"))
                 Spacer()
-                Button(action: {
-                    print("pressed search")
-                }) {
-                    Image(systemName: "magnifyingglass")
-                        .font(.system(size: 22))
-                        .foregroundColor(StocketColors.blackLight)
-                }
-                
+                Text(value)
+                    .font(.system(size: 20, weight: .black))
             }
-            .padding()
-            .background(StocketColors.gray)
-            .cornerRadius(14)
+            Divider()
+        }
+    }
+}
+
+struct TradeView: View {
+    @Environment(\.presentationMode) var presentationMode
+
+    var body: some View {
+        VStack {
+            HStack {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "xmark")
+                        .font(.system(size: 22, weight: .medium))
+                        .foregroundColor(Color("green"))
+                }
+                Spacer()
+                Text("Buy MSFT")
+                    .font(.system(size: 24, weight: .black))
+                    .foregroundColor(Color("mainText"))
+                Spacer()
+            }
             
-            Spacer()
+            VStack {
+                Group {
+                    TradeField(label: "Price", value: "$186.97")
+                    TradeField(label: "Shares", value: "0")
+                }
+                .padding(.top, 50)
+                Spacer()
+                TradeField(label: "Total", value: "0")
+                Button(action: {
+                    
+                }) {
+                    Text("BUY")
+                        .font(.system(size: 20, weight: .black))
+                        .foregroundColor(Color("darkGreen"))
+                        .padding([.top, .bottom], 10)
+                        .padding([.leading, .trailing], 100)
+                        .background(Color("green"))
+                        .cornerRadius(30)
+                }
+            }
         }
         .padding()
+        .background(Color("background").edgesIgnoringSafeArea(.all))
     }
 }
 
