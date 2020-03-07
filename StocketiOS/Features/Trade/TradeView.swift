@@ -57,9 +57,11 @@ struct TradeView: View {
                     TradeField(label: "Price", value: "$186.97")
                     TradeField(label: "Shares", value: "0")
                 }
-                .padding(.top, 50)
+                .padding(.top, 30)
                 Spacer()
                 TradeField(label: "Total", value: "0")
+                NumPadView()
+                    .frame(maxHeight: 250)
                 Button(action: {
                     
                 }) {

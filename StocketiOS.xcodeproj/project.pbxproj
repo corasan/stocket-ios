@@ -85,6 +85,8 @@
 		BAD00A6D2401EE020064D322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A202401E3E40064D322 /* LaunchScreen.storyboard */; };
 		BAD00A6F2401EE020064D322 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A1E2401E3E30064D322 /* Preview Assets.xcassets */; };
 		BAD00A702401EE020064D322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A1B2401E3E30064D322 /* Assets.xcassets */; };
+		BAD0ABE8241383980060224D /* NumPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0ABE7241383980060224D /* NumPadView.swift */; };
+		BAD0ABE9241383980060224D /* NumPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD0ABE7241383980060224D /* NumPadView.swift */; };
 		BAFC942D2401F5B400B5ACB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAD00A2B2401EB1B0064D322 /* GoogleService-Info.plist */; };
 		BAFC94302401F63C00B5ACB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAFC942F2401F63C00B5ACB7 /* GoogleService-Info.plist */; };
 		BAFC94382401FFDF00B5ACB7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFC94372401FFDF00B5ACB7 /* NotificationService.swift */; };
@@ -169,6 +171,7 @@
 		BAD00A2B2401EB1B0064D322 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAD00A512401EC1C0064D322 /* Stocket.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stocket.entitlements; sourceTree = "<group>"; };
 		BAD00A742401EE020064D322 /* StocketiOS Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StocketiOS Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAD0ABE7241383980060224D /* NumPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumPadView.swift; sourceTree = "<group>"; };
 		BAFC942F2401F63C00B5ACB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAFC94352401FFDF00B5ACB7 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAFC94372401FFDF00B5ACB7 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 		BA70553E24071E19002BED20 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				BA76058F241406400061D181 /* NumPad */,
 				BA269028240EE67A00799E30 /* Chart */,
 				BA26901C240C6D0200799E30 /* Stock */,
 				BA70554B2407202B002BED20 /* TabView */,
@@ -372,6 +376,14 @@
 				BA70555B240889C6002BED20 /* SearchListItem.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		BA76058F241406400061D181 /* NumPad */ = {
+			isa = PBXGroup;
+			children = (
+				BAD0ABE7241383980060224D /* NumPadView.swift */,
+			);
+			path = NumPad;
 			sourceTree = "<group>";
 		};
 		BAD00A092401E3E20064D322 = {
@@ -723,6 +735,7 @@
 				BA269021240E0B5800799E30 /* StockStatsItem.swift in Sources */,
 				BA26903E24105C9E00799E30 /* TradeOpenButton.swift in Sources */,
 				BA70555C240889C6002BED20 /* SearchListItem.swift in Sources */,
+				BAD0ABE8241383980060224D /* NumPadView.swift in Sources */,
 				BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */,
 				BAD00A182401E3E20064D322 /* SceneDelegate.swift in Sources */,
 				BA26903B240F7BF000799E30 /* ShortNumberExtension.swift in Sources */,
@@ -764,6 +777,7 @@
 				BA269022240E0B5800799E30 /* StockStatsItem.swift in Sources */,
 				BA26903F24105C9E00799E30 /* TradeOpenButton.swift in Sources */,
 				BA70555D240889C7002BED20 /* SearchListItem.swift in Sources */,
+				BAD0ABE9241383980060224D /* NumPadView.swift in Sources */,
 				BAD00A682401EE020064D322 /* SceneDelegate.swift in Sources */,
 				BA5B383324022A2E006EE5C7 /* AuthState.swift in Sources */,
 				BA26903C240F7BF000799E30 /* ShortNumberExtension.swift in Sources */,
