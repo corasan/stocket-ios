@@ -19,7 +19,9 @@ struct NumPadView: View {
                         ForEach(padRow.row) { padKey in
                             Button(action: {
                                 if (padKey.value == "delete.left") {
-                                    self.trade.shares.removeLast()
+                                    if (self.trade.shares.count != 0) {
+                                        self.trade.shares.removeLast()
+                                    }
                                 } else {
                                     self.trade.shares.append(padKey.value)
                                 }
