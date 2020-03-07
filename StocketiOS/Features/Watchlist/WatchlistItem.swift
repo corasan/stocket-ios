@@ -42,10 +42,12 @@ struct WatchlistItem: View {
                 HStack {
                     Text(self.name)
                         .foregroundColor(Color("subText"))
+                        .font(.system(size: 12))
                         .padding(.top, 5)
                     Spacer()
                     Text("\(Double(self.gains)! > 0 ? "+" : "")\(self.gains)") // (\(self.changePct)%)
                         .foregroundColor(Double(self.gains)! > 0 ? Color("green") : Color("red"))
+                        .font(.system(size: 12))
                         .padding(.top, 5)
                 }
             }

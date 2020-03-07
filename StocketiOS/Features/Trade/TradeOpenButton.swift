@@ -10,18 +10,25 @@ import SwiftUI
 
 struct TradeOpenButton: View {
     @EnvironmentObject var trade: Trade
+    var symbol: String
+    var price: String
+    
+    init(symbol: String, price: String) {
+        self.symbol = symbol
+        self.price = price
+    }
 
     var body: some View {
         VStack {
             Spacer()
             HStack {
-                VStack(alignment: .leading) {
-                    Text("Price")
-                        .foregroundColor(Color("mainText"))
-                        .font(.system(size: 13, weight: .medium))
-                    Text("438.89")
+                HStack {
+                    Text(self.symbol)
                         .foregroundColor(Color("mainText"))
                         .font(.system(size: 14, weight: .medium))
+                    Text(self.price)
+                        .foregroundColor(Color("mainText"))
+                        .font(.system(size: 16, weight: .black))
                 }
                 Spacer()
                 Button(action: {
@@ -40,7 +47,7 @@ struct TradeOpenButton: View {
             .padding([.leading, .trailing], 10)
             .background(Color("background"))
             .sheet(isPresented: $trade.showModal) {
-                Text("trade")
+                TradeView()
             }
         }
     }
@@ -48,6 +55,7 @@ struct TradeOpenButton: View {
 
 struct TradeOpenButton_Previews: PreviewProvider {
     static var previews: some View {
-        TradeOpenButton().environmentObject(Trade())
+        TradeOpenButton(symbol: "MSFT", price: "186.97")
+            .environmentObject(Trade())
     }
 }

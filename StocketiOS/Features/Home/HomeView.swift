@@ -11,6 +11,10 @@ import FirebaseFirestore
 import FirebaseAuth
 
 struct HomeView: View {
+    init() {
+        UINavigationBar.appearance().backgroundColor = UIColor(named: "background")
+    }
+    
     var body: some View {
         NavigationView {
             ScrollView {
