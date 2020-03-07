@@ -35,6 +35,16 @@ struct TradeField: View {
 struct TradeView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var trade: Trade
+    @EnvironmentObject var stock: Stock
+    
+    func getTotal() -> String {
+        let result = Double(getSharesNumber())! * Double(self.stock.selectedStock["price"]!)!
+        return String(format: "%.2f",result)
+    }
+    
+    func getSharesNumber() -> String {
+        return self.trade.shares.count == 0 ? "0" : self.trade.shares.joined(separator: "")
+    }
 
     var body: some View {
         VStack {
@@ -47,7 +57,7 @@ struct TradeView: View {
                         .foregroundColor(Color("green"))
                 }
                 Spacer()
-                Text("Buy MSFT")
+                Text("Buy \(self.stock.selectedStock["symbol"]!)")
                     .font(.system(size: 24, weight: .black))
                     .foregroundColor(Color("mainText"))
                 Spacer()
@@ -55,12 +65,12 @@ struct TradeView: View {
             
             VStack {
                 Group {
-                    TradeField(label: "Price", value: "$186.97")
-                    TradeField(label: "Shares", value: self.trade.shares.count == 0 ? "0" : self.trade.shares.joined(separator: ""))
+                    TradeField(label: "Price", value: self.stock.selectedStock["price"]!)
+                    TradeField(label: "Shares", value: getSharesNumber())
                 }
                 .padding(.top, 30)
                 Spacer()
-                TradeField(label: "Total", value: "0")
+                TradeField(label: "Total", value: getTotal())
                 NumPadView()
                     .frame(maxHeight: 250)
                 Button(action: {
@@ -82,7 +92,29 @@ struct TradeView: View {
 }
 
 struct TradeView_Previews: PreviewProvider {
+    static var stock = Stock()
+
+    static func getData() -> Stock {
+        let data = [
+            "name": "Snap Inc.",
+            "symbol": "SNAP",
+            "price": "14.39",
+            "price_open": "14.35",
+            "day_high": "14.53",
+            "day_low": "13.75",
+            "52_week_high": "19.76",
+            "52_week_low": "9.16",
+            "market_cap": "20436533248",
+            "volume": "27084322",
+            "volume_avg": "25158083",
+            "shares": "1160130048",
+            "eps": "-0.75"
+        ]
+        self.stock.selectStock(data)
+        return self.stock
+    }
+
     static var previews: some View {
-        TradeView().environmentObject(Trade())
+        TradeView().environmentObject(Trade()).environmentObject(getData())
     }
 }

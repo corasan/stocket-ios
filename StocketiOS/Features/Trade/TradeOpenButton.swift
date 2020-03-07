@@ -10,6 +10,7 @@ import SwiftUI
 
 struct TradeOpenButton: View {
     @EnvironmentObject var trade: Trade
+    @EnvironmentObject var stock: Stock
     var symbol: String
     var price: String
     
@@ -47,7 +48,9 @@ struct TradeOpenButton: View {
             .padding([.leading, .trailing], 10)
             .background(Color("background"))
             .sheet(isPresented: $trade.showModal) {
-                TradeView().environmentObject(self.trade)
+                TradeView()
+                    .environmentObject(self.trade)
+                    .environmentObject(self.stock)
             }
         }
     }
