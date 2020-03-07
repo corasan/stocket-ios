@@ -29,7 +29,7 @@ struct StockView: View {
             }
             .padding(.all, 20)
             
-            TradeOpenButton(symbol: self.stock.selectedStock["symbol"]!, price: self.stock.selectedStock["price"]!)
+            TradeOpenButton()
         }
         .background(Color("background"))
     }
