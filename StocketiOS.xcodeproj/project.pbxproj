@@ -312,6 +312,7 @@
 			children = (
 				BA658523240493440094321E /* TradeView.swift */,
 				BA26903D24105C9E00799E30 /* TradeOpenButton.swift */,
+				BAD0ABE7241383980060224D /* NumPadView.swift */,
 			);
 			path = Trade;
 			sourceTree = "<group>";
@@ -381,7 +382,6 @@
 		BA76058F241406400061D181 /* NumPad */ = {
 			isa = PBXGroup;
 			children = (
-				BAD0ABE7241383980060224D /* NumPadView.swift */,
 			);
 			path = NumPad;
 			sourceTree = "<group>";

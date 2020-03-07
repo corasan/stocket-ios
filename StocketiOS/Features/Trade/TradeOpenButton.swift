@@ -35,7 +35,7 @@ struct TradeOpenButton: View {
                     self.trade.toggleModal(true)
                 }) {
                     Text("Trade")
-                        .font(.system(size: 13, weight: .medium))
+                        .font(.system(size: 16, weight: .black))
                         .foregroundColor(Color("darkGreen"))
                         .padding([.top, .bottom], 8)
                         .padding([.leading, .trailing], 40)
@@ -47,7 +47,7 @@ struct TradeOpenButton: View {
             .padding([.leading, .trailing], 10)
             .background(Color("background"))
             .sheet(isPresented: $trade.showModal) {
-                TradeView()
+                TradeView().environmentObject(self.trade)
             }
         }
     }

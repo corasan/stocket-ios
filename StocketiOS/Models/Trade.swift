@@ -11,6 +11,7 @@ import Foundation
 
 class Trade: ObservableObject {
     @Published var showModal: Bool = false
+    @Published var shares: [String] = []
     
     func toggleModal(_ state: Bool) {
         self.showModal = state
