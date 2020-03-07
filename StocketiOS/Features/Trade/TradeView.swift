@@ -36,15 +36,6 @@ struct TradeView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var trade: Trade
     @EnvironmentObject var stock: Stock
-    
-    func getTotal() -> String {
-        let result = Double(getSharesNumber())! * Double(self.stock.selectedStock["price"]!)!
-        return String(format: "%.2f",result)
-    }
-    
-    func getSharesNumber() -> String {
-        return self.trade.shares.count == 0 ? "0" : self.trade.shares.joined(separator: "")
-    }
 
     var body: some View {
         VStack {
@@ -66,15 +57,15 @@ struct TradeView: View {
             VStack {
                 Group {
                     TradeField(label: "Price", value: self.stock.selectedStock["price"]!)
-                    TradeField(label: "Shares", value: getSharesNumber())
+                    TradeField(label: "Shares", value: self.trade.getSharesNumber())
                 }
                 .padding(.top, 30)
                 Spacer()
-                TradeField(label: "Total", value: getTotal())
+                TradeField(label: "Total", value: self.trade.total)
                 NumPadView()
                     .frame(maxHeight: 250)
                 Button(action: {
-                    
+                    print(self.stock.selectedStock)
                 }) {
                     Text("BUY")
                         .font(.system(size: 20, weight: .black))
@@ -88,6 +79,9 @@ struct TradeView: View {
         }
         .padding()
         .background(Color("background").edgesIgnoringSafeArea(.all))
+        .onAppear {
+            self.trade.stock = self.stock.selectedStock
+        }
     }
 }
 
@@ -115,6 +109,8 @@ struct TradeView_Previews: PreviewProvider {
     }
 
     static var previews: some View {
-        TradeView().environmentObject(Trade()).environmentObject(getData())
+        TradeView()
+            .environmentObject(Trade())
+            .environmentObject(getData())
     }
 }
