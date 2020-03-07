@@ -41,7 +41,6 @@ struct ContentView: View {
             self.authState.stopListening()
         }
         .background(Color("background").edgesIgnoringSafeArea(.all))
-        .preferredColorScheme(.dark)
     }
 }
 

@@ -27,7 +27,7 @@ struct TradeField: View {
                 Text(value)
                     .font(.system(size: 20, weight: .black))
             }
-            Divider().frame(height: 0.8)
+            Divider().frame(height: 0.5)
         }
     }
 }
@@ -79,8 +79,8 @@ struct TradeView: View {
                     Text("BUY")
                         .font(.system(size: 20, weight: .black))
                         .foregroundColor(Color("darkGreen"))
-                        .padding([.top, .bottom], 10)
-                        .padding([.leading, .trailing], 100)
+                        .padding(.vertical, 12)
+                        .padding(.horizontal, 110)
                         .background(Color("green"))
                         .cornerRadius(30)
                 }
