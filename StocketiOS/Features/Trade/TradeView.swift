@@ -65,7 +65,9 @@ struct TradeView: View {
                 NumPadView()
                     .frame(maxHeight: 250)
                 Button(action: {
-                    print(self.stock.selectedStock)
+                    self.trade.createTrade() {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }
                 }) {
                     Text("BUY")
                         .font(.system(size: 20, weight: .black))
