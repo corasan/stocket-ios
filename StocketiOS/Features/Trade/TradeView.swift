@@ -36,11 +36,10 @@ struct TradeView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var trade: Trade
     @EnvironmentObject var stock: Stock
-    @State var pickerSelected = 0
     
     func setTitle() -> String {
         let symbol = self.stock.selectedStock["symbol"]!
-        let title = self.pickerSelected == 0 ? "Buy \(symbol)" : "Sell \(symbol)"
+        let title = self.trade.pickerActionSelected == 0 ? "Buy \(symbol)" : "Sell \(symbol)"
         return title
     }
 
@@ -68,7 +67,7 @@ struct TradeView: View {
                 }
                 .padding(.top, 30)
                 
-                if (self.pickerSelected == 1) {
+                if (self.trade.pickerActionSelected == 1) {
                     HStack {
                         Spacer()
                         Text("You own 12")
@@ -77,7 +76,7 @@ struct TradeView: View {
                     }
                 }
                 
-                TradeActionPicker(pickerSelected: $pickerSelected)
+                TradeActionPicker()
 
                 Spacer()
                 TradeField(label: "Total", value: self.trade.total)
