@@ -9,18 +9,16 @@
 import SwiftUI
 
 struct TradeActionPicker: View {
-    @Binding var pickerSelected: Int
     @EnvironmentObject var trade: Trade
     
-    init(pickerSelected: Binding<Int>) {
+    init() {
         UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(named: "green")
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(named: "darkGreen")!], for: .selected)
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(named: "subText")!], for: .normal)
-        self._pickerSelected = pickerSelected
     }
 
     var body: some View {
-        Picker(selection: $pickerSelected, label: Text("")) {
+        Picker(selection: self.$trade.pickerActionSelected, label: Text("")) {
             Text("BUY").tag(0)
             Text("SELL").tag(1)
         }
@@ -32,8 +30,7 @@ struct TradeActionPicker: View {
 }
 
 struct TradeActionPicker_Previews: PreviewProvider {
-    @State static var pickerSelected = 0
     static var previews: some View {
-        TradeActionPicker(pickerSelected: $pickerSelected)
+        TradeActionPicker()
     }
 }

@@ -12,15 +12,19 @@ import FirebaseAuth
 
 class Trade: ObservableObject {
     @Published var showModal: Bool = false
+    @Published var action: String = "BUY"
+    @Published var total: String = "0"
+    @Published var stock = [String: String]()
+    @Published var pickerActionSelected = 0 {
+        didSet {
+            setAction()
+        }
+    }
     @Published var shares: [String] = [] {
         didSet {
             calcTotal()
         }
     }
-    @Published var action: String = "BUY"
-    @Published var total: String = "0"
-    @Published var stock = [String: String]()
-    @Published var actionPickerSelected = 0
     
     func toggleModal(_ state: Bool) {
         self.showModal = state
@@ -35,10 +39,14 @@ class Trade: ObservableObject {
         self.total = String(format: "%.2f", total)
     }
     
+    func setAction() {
+        self.action = self.pickerActionSelected == 0 ? "BUY" : "SELL"
+    }
+    
     func createTrade(_ onSuccess: @escaping () -> Void) {
         let user = Auth.auth().currentUser
         let db = Firestore.firestore().collection("Users")
-        
+
         if let user = user {
             db.document(user.uid).collection("trades").addDocument(data: [
                 "symbol": self.stock["symbol"]!,
