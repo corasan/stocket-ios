@@ -70,7 +70,7 @@ struct TradeView: View {
                 if (self.trade.pickerActionSelected == 1) {
                     HStack {
                         Spacer()
-                        Text("You own 12")
+                        Text("You own 12 shares")
                             .font(.system(size: 12))
                             .foregroundColor(Color("subText"))
                     }
@@ -87,7 +87,7 @@ struct TradeView: View {
                         self.presentationMode.wrappedValue.dismiss()
                     }
                 }) {
-                    Text("BUY")
+                    Text(self.trade.pickerActionSelected == 0 ? "BUY" : "SELL")
                         .font(.system(size: 20, weight: .black))
                         .foregroundColor(Color("darkGreen"))
                         .padding(.vertical, 12)
