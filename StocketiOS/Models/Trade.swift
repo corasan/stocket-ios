@@ -34,18 +34,25 @@ class Trade: ObservableObject {
         self.total = String(format: "%.2f", total)
     }
     
-    func createTrade(price: String, symbol: String) {
+    func createTrade(_ onSuccess: @escaping () -> Void) {
         let user = Auth.auth().currentUser
         let db = Firestore.firestore().collection("Users")
         
         if let user = user {
             db.document(user.uid).collection("trades").addDocument(data: [
                 "symbol": self.stock["symbol"]!,
-                "price": self.stock["price"]!,
-                "quantity": self.shares.joined(separator: ""),
+                "price": Double(self.stock["price"]!)!,
+                "quantity": Int(self.shares.joined(separator: ""))!,
                 "action": self.action,
-                "value": $total
-            ])
+                "value": Double(self.total)!
+            ]) { err in
+                if let err = err {
+                    print("Error making the trade \(err)")
+                } else {
+                    onSuccess()
+                    self.shares = []
+                }
+            }
         }
     }
 }
