@@ -36,6 +36,13 @@ struct TradeView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var trade: Trade
     @EnvironmentObject var stock: Stock
+    @State var pickerSelected = 0
+    
+    func setTitle() -> String {
+        let symbol = self.stock.selectedStock["symbol"]!
+        let title = self.pickerSelected == 0 ? "Buy \(symbol)" : "Sell \(symbol)"
+        return title
+    }
 
     var body: some View {
         VStack {
@@ -48,7 +55,7 @@ struct TradeView: View {
                         .foregroundColor(Color("green"))
                 }
                 Spacer()
-                Text("Buy \(self.stock.selectedStock["symbol"]!)")
+                Text(setTitle())
                     .font(.system(size: 24, weight: .black))
                     .foregroundColor(Color("mainText"))
                 Spacer()
@@ -60,6 +67,18 @@ struct TradeView: View {
                     TradeField(label: "Shares", value: self.trade.getSharesNumber())
                 }
                 .padding(.top, 30)
+                
+                if (self.pickerSelected == 1) {
+                    HStack {
+                        Spacer()
+                        Text("You own 12")
+                            .font(.system(size: 12))
+                            .foregroundColor(Color("subText"))
+                    }
+                }
+                
+                TradeActionPicker(pickerSelected: $pickerSelected)
+
                 Spacer()
                 TradeField(label: "Total", value: self.trade.total)
                 NumPadView()

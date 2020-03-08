@@ -27,6 +27,8 @@
 		BA2690422410B23100799E30 /* TabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2690402410B23100799E30 /* TabBarExtension.swift */; };
 		BA2690442410C68E00799E30 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2690432410C68E00799E30 /* Trade.swift */; };
 		BA2690452410C68E00799E30 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2690432410C68E00799E30 /* Trade.swift */; };
+		BA2CA2BD24156F3B00CD1E64 /* TradeActionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2CA2BC24156F3B00CD1E64 /* TradeActionPicker.swift */; };
+		BA2CA2BE24156F3B00CD1E64 /* TradeActionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2CA2BC24156F3B00CD1E64 /* TradeActionPicker.swift */; };
 		BA5B382324021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */; };
 		BA5B382424021931006EE5C7 /* AppleSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */; };
 		BA5B382524021931006EE5C7 /* AppleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5B382124021931006EE5C7 /* AppleSignIn.swift */; };
@@ -137,6 +139,7 @@
 		BA26903D24105C9E00799E30 /* TradeOpenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeOpenButton.swift; sourceTree = "<group>"; };
 		BA2690402410B23100799E30 /* TabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarExtension.swift; sourceTree = "<group>"; };
 		BA2690432410C68E00799E30 /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
+		BA2CA2BC24156F3B00CD1E64 /* TradeActionPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeActionPicker.swift; sourceTree = "<group>"; };
 		BA5B382024021930006EE5C7 /* AppleSignInCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInCoordinator.swift; sourceTree = "<group>"; };
 		BA5B382124021931006EE5C7 /* AppleSignIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignIn.swift; sourceTree = "<group>"; };
 		BA5B382224021931006EE5C7 /* AppleSignInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleSignInController.swift; sourceTree = "<group>"; };
@@ -313,6 +316,7 @@
 				BA658523240493440094321E /* TradeView.swift */,
 				BA26903D24105C9E00799E30 /* TradeOpenButton.swift */,
 				BAD0ABE7241383980060224D /* NumPadView.swift */,
+				BA2CA2BC24156F3B00CD1E64 /* TradeActionPicker.swift */,
 			);
 			path = Trade;
 			sourceTree = "<group>";
@@ -719,6 +723,7 @@
 			files = (
 				BA705539240648B9002BED20 /* WatchlistItem.swift in Sources */,
 				BA5B382724021931006EE5C7 /* AppleSignInController.swift in Sources */,
+				BA2CA2BD24156F3B00CD1E64 /* TradeActionPicker.swift in Sources */,
 				BA5B3832240227C1006EE5C7 /* AuthState.swift in Sources */,
 				BA7055522407279A002BED20 /* WatchlistSearch.swift in Sources */,
 				BA70555924088937002BED20 /* SearchView.swift in Sources */,
@@ -761,6 +766,7 @@
 			files = (
 				BA70553A240648B9002BED20 /* WatchlistItem.swift in Sources */,
 				BA5B382824021931006EE5C7 /* AppleSignInController.swift in Sources */,
+				BA2CA2BE24156F3B00CD1E64 /* TradeActionPicker.swift in Sources */,
 				BA5B383624022AFF006EE5C7 /* MainTabView.swift in Sources */,
 				BA7055532407279A002BED20 /* WatchlistSearch.swift in Sources */,
 				BA70555A24088937002BED20 /* SearchView.swift in Sources */,
