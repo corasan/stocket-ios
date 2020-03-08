@@ -20,6 +20,7 @@ class Trade: ObservableObject {
     @Published var action: String = "BUY"
     @Published var total: String = "0"
     @Published var stock = [String: String]()
+    @Published var actionPickerSelected = 0
     
     func toggleModal(_ state: Bool) {
         self.showModal = state
