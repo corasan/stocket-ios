@@ -11,7 +11,7 @@ import SwiftUI
 struct YourStocks: View {
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Your Stocks")
+            Text("Stocks")
                 .font(.system(size: 20))
                 .fontWeight(.bold)
                 .foregroundColor(Color("mainText"))

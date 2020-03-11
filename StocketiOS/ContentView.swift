@@ -14,6 +14,7 @@ struct ContentView: View {
     var watchlist = Watchlist()
     var stock = Stock()
     var trade = Trade()
+    var user = User()
     var authStatehandle: AuthStateDidChangeListenerHandle?
     
     init() {
@@ -32,10 +33,12 @@ struct ContentView: View {
                     .environmentObject(watchlist)
                     .environmentObject(stock)
                     .environmentObject(trade)
+                    .environmentObject(user)
             }
         }
         .onAppear {
             self.authState.listen()
+            self.user.getUserData()
         }
         .onDisappear {
             self.authState.stopListening()
