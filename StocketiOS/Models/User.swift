@@ -26,8 +26,10 @@ class User: ObservableObject {
                 
                 let result = document.data()!
                 
+                
                 DispatchQueue.main.async {
                     self.data = result
+                    print("USER!$%# \(self.data)")
                 }
             }
         }
