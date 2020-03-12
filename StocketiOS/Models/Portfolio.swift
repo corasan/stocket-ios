@@ -19,9 +19,10 @@ struct Position: Identifiable {
 }
 
 class Portfolio: ObservableObject {
-    static private var portfolioListener: ListenerRegistration?
+    private var portfolioListener: ListenerRegistration?
+    @Published var data = [Position]()
     
-    static func subscribe(limit: Int = 20, _ onSuccess: @escaping (_ positions: [Position]) -> Void) {
+    func subscribe(limit: Int = 20) {
         let user = Auth.auth().currentUser
         let db = Firestore.firestore().collection("Users")
         
@@ -43,14 +44,13 @@ class Portfolio: ObservableObject {
                             value: String(format:"%.2f", pos.get("value") as! Double)
                         )
                     }
-                    print(docs)
-                    onSuccess(docs)
+                    self.data = docs
                 }
             }
         }
     }
     
-    static func unsubscribe() {
+    func unsubscribe() {
         print("unsubscribed")
         self.portfolioListener?.remove()
     }
