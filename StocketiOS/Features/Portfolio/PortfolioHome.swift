@@ -19,16 +19,6 @@ struct PortfolioHome: View {
                 PortfolioItem(position: pos)
             }
         }
-        .onAppear {
-            Portfolio.subscribe { documents in
-                for el in documents {
-                    self.positions.append(el)
-                }
-            }
-        }
-        .onDisappear {
-            Portfolio.unsubscribe()
-        }
     }
 }
 
